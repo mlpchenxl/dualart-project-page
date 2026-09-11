@@ -1,0 +1,36 @@
+.gallery-heading { margin-top: 52px; }
+.gallery-heading h3 { font-size: 24px; letter-spacing: -.5px; margin: 0 0 10px; }
+.gallery-heading p { color: var(--muted); font-size: 14px; max-width: 760px; margin: 8px 0; }
+.gallery-heading .gallery-note { font-size: 12px; }
+.object-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: start; margin-top: 24px; }
+.object-card { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white; min-width: 0; }
+.object-card.is-active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.object-heading { padding: 12px 14px 8px; }
+.object-heading h4 { font-size: 17px; font-weight: 600; margin: 0 0 3px; }
+.object-meta { font-size: 11px; color: var(--muted); margin: 0; }
+.object-viewport { position: relative; aspect-ratio: 4 / 3; background: #e7ecf2; }
+.object-viewport img, .object-viewport canvas { width: 100%; height: 100%; position: absolute; inset: 0; border-radius: 0; object-fit: contain; }
+.object-viewport canvas { display: block; touch-action: none; }
+.object-card.is-ready .object-viewport img { visibility: hidden; }
+.object-card button { font: inherit; font-size: 12px; cursor: pointer; border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; background: white; color: var(--ink); }
+.object-card button:hover { border-color: var(--accent); color: var(--accent); }
+.object-card button:disabled { opacity: .5; cursor: default; }
+.object-card .object-launch { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); width: max-content; max-width: calc(100% - 24px); background: var(--ink); color: white; border-color: transparent; box-shadow: 0 3px 12px #0002; }
+.object-bar { display: flex; align-items: center; gap: 8px; padding: 0 12px; }
+.object-status { flex: 1; color: var(--muted); font-size: 11px; line-height: 1.5; margin: 6px 0; }
+.object-status:empty { margin: 0; }
+.object-controls { padding: 0 12px 8px; }
+.object-actions { display: flex; flex-wrap: wrap; gap: 6px; padding: 2px 0 6px; }
+.object-actions button[aria-pressed="true"] { color: var(--accent); background: #edf5f0; border-color: var(--accent); }
+.object-controls summary { cursor: pointer; font-size: 12px; padding: 4px 0; }
+.joint-list { max-height: 220px; overflow: auto; overscroll-behavior: contain; }
+.joint-control { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 8px; padding: 8px 0; font-size: 11px; }
+.joint-control span { overflow-wrap: anywhere; }
+.joint-control output { color: var(--accent); font-variant-numeric: tabular-nums; }
+.joint-control input { grid-column: 1 / -1; width: 100%; margin: 10px 0; accent-color: var(--accent); }
+.object-card:fullscreen { width: 100%; height: 100%; overflow: auto; border: none; border-radius: 0; padding: 12px max(16px, calc((100vw - 1100px) / 2)); }
+.object-card:fullscreen .object-viewport { aspect-ratio: auto; height: 65vh; }
+.object-card:fullscreen .joint-list { max-height: 160px; }
+.object-card [hidden] { display: none !important; }
+@media (max-width: 900px) { .object-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 580px) { .object-grid { grid-template-columns: 1fr; } }

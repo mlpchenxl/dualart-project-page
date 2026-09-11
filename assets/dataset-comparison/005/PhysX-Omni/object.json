@@ -1,0 +1,129 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "benchmark_root",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "abstract_6_0",
+      "label": "abstract_6_0",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0040625
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.6332058045120594,
+            0.010050885785905668,
+            0.7739182055147393
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "abstract_6_1",
+      "label": "abstract_6_1",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0040625
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.6332058045120594,
+            0.010050885785905668,
+            0.7739182055147393
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "abstract_6_2",
+      "label": "abstract_6_2",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0040625
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.6332058045120594,
+            0.010050885785905668,
+            0.7739182055147393
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "abstract_6_3",
+      "label": "abstract_6_3",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0040625
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.6332058045120594,
+            0.010050885785905668,
+            0.7739182055147393
+          ]
+        }
+      }
+    }
+  ]
+}

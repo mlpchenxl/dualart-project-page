@@ -1,0 +1,181 @@
+{
+  "schema_version": "arts-textured-sources-v1",
+  "frame": "object_rest_world",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "chest",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-ffce331e3e22ac6a8fe5ed90ec2dc72260c3edf5f85a90fae54190f3865ba34c/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "door_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-546d00af8da2bea2d2a96f12101d60df6d79cf6598cf1d4f4e06d0ab8c6896ca/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.098
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.619
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.365
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "door_2",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-2dd18dcc074e58873700ad524f2790396e0f87d65f78b0a9b243656c629868b6/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.098
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.619
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.365
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "tray_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-f5042cbc8b711d7d95a363246c3ad5a936218e3ccd179cc02d9be9a1c15e63fe/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.3
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.779
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "tray_2",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-30d94fa44fdc77dd4ebdd39c7364a41f874b2a9d1bd74874a2d1204fc5fd7ec6/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.3
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.779
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

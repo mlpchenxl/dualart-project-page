@@ -1,0 +1,154 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "washer",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "door_1",
+      "label": "door_1",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          90.00021045914971
+        ],
+        "axis": {
+          "origin": [
+            0.183346,
+            -0.198,
+            0.346388
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "drum_1",
+      "label": "drum_1",
+      "parent": 0,
+      "joint": {
+        "type": "continuous",
+        "range": [
+          0.0,
+          360.0
+        ],
+        "axis": {
+          "origin": [
+            -0.110144,
+            0.0,
+            0.346388
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "door_2",
+      "label": "door_2",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          90.00021045914971
+        ],
+        "axis": {
+          "origin": [
+            -0.0666309,
+            -0.097125,
+            0.955
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "drum_2",
+      "label": "drum_2",
+      "parent": 0,
+      "joint": {
+        "type": "continuous",
+        "range": [
+          0.0,
+          360.0
+        ],
+        "axis": {
+          "origin": [
+            -0.179923,
+            0.0,
+            0.955
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "knob_1",
+      "label": "knob_1",
+      "parent": 0,
+      "joint": {
+        "type": "continuous",
+        "range": [
+          0.0,
+          360.0
+        ],
+        "axis": {
+          "origin": [
+            0.184263,
+            0.0,
+            0.602624
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "body",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "lid",
+      "label": "lid",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          114.59155902616465
+        ],
+        "axis": {
+          "origin": [
+            -0.28,
+            0.0,
+            0.866
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "wheel_0",
+      "label": "wheel_0",
+      "parent": 0,
+      "joint": {
+        "type": "continuous",
+        "range": [
+          0.0,
+          360.0
+        ],
+        "axis": {
+          "origin": [
+            -0.33,
+            0.2625,
+            0.1
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "wheel_1",
+      "label": "wheel_1",
+      "parent": 0,
+      "joint": {
+        "type": "continuous",
+        "range": [
+          0.0,
+          360.0
+        ],
+        "axis": {
+          "origin": [
+            -0.33,
+            -0.2625,
+            0.1
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

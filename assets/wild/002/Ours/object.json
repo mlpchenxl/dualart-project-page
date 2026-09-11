@@ -1,0 +1,79 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "back_frame",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "front_legs_1",
+      "label": "front_legs_1",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          63.400014566626595
+        ],
+        "axis": {
+          "origin": [
+            -0.0933501,
+            0.0,
+            0.397
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "seat_1",
+      "label": "seat_1",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          90.00021045914971
+        ],
+        "axis": {
+          "origin": [
+            -0.0933501,
+            0.0,
+            0.447
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

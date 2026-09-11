@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DualArt: Dual-Workspace Generation of Articulated Assets from Images.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fafaf8">
+  <title>DualArt: Dual-Workspace Generation of Articulated Assets from Images</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="static/gallery.css">
+  <link rel="stylesheet" href="static/benchmark/explorer.css">
+  <link rel="stylesheet" href="static/wild/explorer.css">
+  <script type="importmap">
+    {"imports": {"three": "./static/viewer/vendor/three.module.js"}}
+  </script>
+  <script type="module" src="static/gallery.js"></script>
+  <script type="module" src="static/benchmark/explorer.js"></script>
+  <script type="module" src="static/applications.js"></script>
+  <script type="module" src="static/wild/explorer.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#main" aria-label="DualArt home">DualArt<span class="dot">.</span></a>
+    <nav aria-label="Page sections">
+      <a href="#overview">Overview</a>
+      <a href="#method">Method</a>
+      <a href="#dataset">Dataset</a>
+      <a href="#benchmark">Benchmark</a>
+      <a href="#in-the-wild">In-the-Wild</a>
+      <a href="#applications">Applications</a>
+      <a href="#sim-to-real">Sim-to-Real</a>
+      <a href="#citation">Citation</a>
+    </nav>
+    <span class="draft-label">In preparation</span>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="project-title">
+      <h1 id="project-title">DualArt</h1>
+      <p class="hero-subtitle">Dual-Workspace Generation of Articulated Assets from Images</p>
+      <p class="pending">Authors and affiliations to be added.</p>
+      <div class="resources" aria-label="Project resources, not yet available">
+        <button type="button" disabled>Paper <span>Coming soon</span></button>
+        <button type="button" disabled>Code <span>Coming soon</span></button>
+        <button type="button" disabled>Data <span>Coming soon</span></button>
+      </div>
+      <figure class="teaser">
+        <video controls playsinline preload="metadata" width="1920" height="1080"
+          poster="assets/images/kitchen.jpg" aria-label="Kitchen scene showcase" aria-describedby="teaser-caption">
+          <source src="assets/videos/kitchen.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="assets/videos/kitchen.mp4">Download the kitchen video</a>.
+        </video>
+        <figcaption id="teaser-caption">Articulated objects in a kitchen and living space · Scene showcase · 110 seconds</figcaption>
+      </figure>
+    </section>
+
+    <section id="overview" class="section abstract" aria-labelledby="abstract-title">
+      <p class="eyebrow">01 / Overview</p>
+      <h2 id="abstract-title">Abstract</h2>
+      <!-- Paste the approved paper abstract here. -->
+      <p class="placeholder-copy">The paper abstract will appear here. This page is being prepared; the final method description and research claims will be added with the paper materials.</p>
+    </section>
+
+    <section id="method" class="section" aria-labelledby="method-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / Approach</p><h2 id="method-title">Method</h2></div>
+        <p class="pending">Pipeline figure &amp; explanation</p>
+      </div>
+      <figure>
+        <div class="media-placeholder method-media">
+          <span class="placeholder-kicker">Method overview</span>
+          <span class="placeholder-title">The reconstruction pipeline</span>
+          <span class="placeholder-note">Method figure to be added</span>
+        </div>
+        <figcaption>A figure and caption explaining the method will be added here.</figcaption>
+      </figure>
+    </section>
+
+    <section id="dataset" class="section" aria-labelledby="dataset-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / Dataset</p><h2 id="dataset-title">RealProduct Dataset</h2></div>
+        <p class="pending">111 seconds · 1080p</p>
+      </div>
+      <figure>
+        <video controls playsinline preload="none" width="1920" height="1080"
+          poster="assets/images/realproduct-dataset.jpg" aria-label="RealProduct dataset showcase" aria-describedby="dataset-caption">
+          <source src="assets/videos/realproduct-dataset.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="assets/videos/realproduct-dataset.mp4">Download the dataset video</a>.
+        </video>
+        <figcaption id="dataset-caption">A continuous gallery tour of 114 collected RealProduct assets, showing their geometry and articulated motion.</figcaption>
+      </figure>
+      <a class="video-download" href="assets/videos/realproduct-dataset.mp4" download>Download video ↓</a>
+      <div class="gallery-heading">
+        <h3>Explore individual objects</h3>
+      </div>
+      <p id="gallery-message" role="status">Loading object previews…</p>
+      <noscript><p>Enable JavaScript to explore the 3D objects. The dataset video above remains available.</p></noscript>
+      <div id="object-gallery" class="object-grid"></div>
+      <template id="object-card-template">
+        <article class="object-card">
+          <div class="object-heading"><h4></h4><p class="object-meta"></p></div>
+          <div class="object-viewport">
+            <img loading="lazy" width="720" height="720" alt="">
+            <button class="object-launch" type="button" hidden>Retry 3D</button>
+          </div>
+          <div class="object-bar">
+            <p class="object-status" role="status"></p>
+          </div>
+          <div class="object-controls" hidden>
+            <div class="object-actions">
+              <button class="object-play" type="button" aria-pressed="false">Play motion</button>
+              <button class="object-reset" type="button">Reset</button>
+              <button class="object-expand" type="button">Fullscreen</button>
+            </div>
+            <details><summary>Individual joints</summary><div class="joint-list"></div></details>
+          </div>
+        </article>
+      </template>
+    </section>
+
+    <section id="benchmark" class="section" aria-labelledby="benchmark-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">04 / Benchmark</p><h2 id="benchmark-title">Benchmark &amp; evaluation protocol</h2></div>
+        <p class="pending">49.4 seconds · 1080p</p>
+      </div>
+      <figure>
+        <video controls playsinline preload="none" width="1920" height="1080"
+          poster="assets/images/benchmark.jpg" aria-label="Benchmark evaluation protocol showcase">
+          <source src="assets/videos/benchmark.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="assets/videos/benchmark.mp4">Download the benchmark video</a>.
+        </video>
+      </figure>
+      <a class="video-download" href="assets/videos/benchmark.mp4" download>Download video ↓</a>
+      <div class="gallery-heading">
+        <h3>What do the metrics measure?</h3>
+        <p>Select an example, switch metrics and explore the same object across articulation states.</p>
+      </div>
+      <div id="metric-explorer" class="metric-explorer">
+        <div id="metric-objects" class="metric-objects" role="group" aria-label="Benchmark reference examples"></div>
+        <fieldset id="metric-controls" disabled>
+          <legend class="sr-only">Metric and reference state</legend>
+          <div class="metric-tabs" role="group" aria-label="Metric family">
+            <button type="button" data-metric="IoU" aria-pressed="true">IoU</button>
+            <button type="button" data-metric="cDist" aria-pressed="false">cDist</button>
+            <button type="button" data-metric="CD" aria-pressed="false">CD</button>
+            <button type="button" data-metric="AOR" aria-pressed="false">AOR</button>
+            <button type="button" data-metric="Appearance" aria-pressed="false">Appearance</button>
+          </div>
+          <div class="metric-state-controls">
+            <label id="metric-pose-label">Pose
+              <select id="metric-pose"><option value="RS">Rest (RS)</option><option value="AS">Articulated (AS)</option></select>
+            </label>
+            <label class="metric-state-label">State <output id="metric-state-value" for="metric-state">Rest · t = 0.00</output>
+              <input id="metric-state" type="range" min="0" max="4" step="1" value="0" aria-label="Articulation state">
+            </label>
+            <label id="metric-view-label" hidden>View <select id="metric-view"></select></label>
+            <label id="metric-silhouette-label" hidden><input id="metric-silhouette" type="checkbox"> Show silhouette</label>
+            <button id="metric-fit" type="button">Reset view</button>
+          </div>
+        </fieldset>
+        <div class="metric-body">
+          <div class="metric-visual">
+            <div id="metric-model" class="metric-model"><img id="metric-poster" alt="Selected reference object" hidden></div>
+            <figure id="metric-frame" class="metric-frame" hidden>
+              <a id="metric-image-link" target="_blank" rel="noopener"><img id="metric-image" alt="Selected ground-truth frame"></a>
+              <figcaption id="metric-image-caption"></figcaption>
+            </figure>
+            <p id="metric-loading" role="status">Loading benchmark examples…</p>
+            <button id="metric-retry" type="button" hidden>Retry model</button>
+            <p id="metric-facts" role="status"></p>
+          </div>
+          <aside class="metric-description" aria-live="polite">
+            <span class="metric-reference-label">Reference illustration · not a model score</span>
+            <h4 id="metric-title"></h4>
+            <p id="metric-formula" class="metric-formula"></p>
+            <p id="metric-explanation"></p>
+            <p id="metric-legend" class="metric-legend"></p>
+            <p id="metric-scope" class="metric-scope"></p>
+          </aside>
+        </div>
+        <details class="metric-protocol">
+          <summary>About the state protocol</summary>
+          <p>RS uses the zero joint pose. AS geometry averages five synchronized states: t = 0, 0.25, 0.5, 0.75 and 1. Revolute joints follow a signed 90° span; prismatic joints follow their evaluation travel. AOR uses the full evaluation range and ten states in formal evaluation; its slider here is a continuous pose preview.</p>
+          <p>Appearance uses the published five-state, eight-view reference images. A valid score requires a matching prediction and the evaluator’s recorded protocol. This illustration does not compute benchmark scores.</p>
+        </details>
+        <noscript><p>Enable JavaScript to explore metrics. The benchmark video above explains the protocol.</p></noscript>
+      </div>
+      <div id="dataset-results" aria-labelledby="dataset-results-title">
+        <h3 id="dataset-results-title">Dataset Results</h3>
+        <div id="dataset-explorer" data-comparison="dataset" data-manifest="assets/dataset-comparison.json">
+          <div class="wild-choices" aria-label="Choose an input object"></div>
+          <p id="dataset-status" role="status">Loading examples…</p>
+          <div class="wild-panel">
+            <canvas id="dataset-canvas" aria-hidden="true"></canvas>
+            <div class="wild-scroll" tabindex="0" aria-label="Input and six method results, including DualArt. Scroll horizontally to see all methods.">
+              <div class="wild-grid">
+                <figure class="wild-input"><h3>Input image</h3><img id="dataset-input-image" alt=""><figcaption id="dataset-input-caption"></figcaption></figure>
+              </div>
+            </div>
+          </div>
+          <div class="wild-controls">
+            <button id="dataset-play" type="button" disabled>Play motion</button>
+            <label for="dataset-state">Joint motion</label>
+            <input id="dataset-state" type="range" min="0" max="1" step="0.01" value="0" disabled>
+            <output id="dataset-state-value" for="dataset-state">0%</output>
+            <label class="wild-materials"><input id="dataset-materials" type="checkbox" disabled> Original appearance</label>
+            <button id="dataset-reset" type="button" disabled>Reset views</button>
+          </div>
+          <noscript><p>Enable JavaScript to explore the reconstructed objects.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section id="in-the-wild" class="section" aria-labelledby="wild-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">05 / In-the-Wild</p><h2 id="wild-title">In-the-Wild Results</h2></div>
+      </div>
+      <div id="wild-explorer" data-comparison="wild" data-manifest="assets/wild.json">
+        <div class="wild-choices" aria-label="Choose an input object"></div>
+        <p id="wild-status" role="status">Loading examples…</p>
+        <div class="wild-panel">
+          <canvas id="wild-canvas" aria-hidden="true"></canvas>
+          <div class="wild-scroll" tabindex="0" aria-label="Input and six method results, including DualArt. Scroll horizontally to see all methods.">
+            <div class="wild-grid">
+              <figure class="wild-input"><h3>Input image</h3><img id="wild-input-image" alt=""><figcaption id="wild-input-caption"></figcaption></figure>
+            </div>
+          </div>
+        </div>
+        <div class="wild-controls">
+          <button id="wild-play" type="button" disabled>Play motion</button>
+          <label for="wild-state">Joint motion</label>
+          <input id="wild-state" type="range" min="0" max="1" step="0.01" value="0" disabled>
+          <output id="wild-state-value" for="wild-state">0%</output>
+          <label class="wild-materials"><input id="wild-materials" type="checkbox" disabled> Original appearance</label>
+          <button id="wild-reset" type="button" disabled>Reset views</button>
+        </div>
+        <noscript><p>Enable JavaScript to explore the reconstructed objects.</p></noscript>
+      </div>
+    </section>
+
+    <section id="applications" class="section" aria-labelledby="applications-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">06 / Applications</p><h2 id="applications-title">Applications</h2></div>
+        <p class="pending">Robot manipulation</p>
+      </div>
+      <div class="application-carousel" role="region" aria-roledescription="carousel" aria-label="Robot application videos">
+        <div id="application-track" class="application-track" tabindex="0" aria-label="Application videos. Use left and right arrow keys to browse.">
+          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="1 of 3" aria-labelledby="fridge-retrieval-title">
+            <h3 id="fridge-retrieval-title">ALOHA · Refrigerator retrieval</h3>
+            <p class="application-description">ALOHA opens a RealProduct refrigerator, reaches inside and retrieves a drink bottle.</p>
+            <figure>
+              <video controls playsinline preload="none" width="1920" height="1080"
+                poster="assets/images/aloha-fridge-retrieval.jpg" aria-label="ALOHA refrigerator opening and bottle retrieval demonstration" aria-describedby="fridge-retrieval-caption">
+                <source src="assets/videos/aloha-fridge-retrieval.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/aloha-fridge-retrieval.mp4">Download the application video</a>.
+              </video>
+              <figcaption id="fridge-retrieval-caption">RealProduct 015 refrigerator + RealProduct 029 bottle · Scripted simulation with contact-confirmed grasp assistance · 40.7 seconds</figcaption>
+            </figure>
+            <a class="video-download" href="assets/videos/aloha-fridge-retrieval.mp4" download>Download video ↓</a>
+          </article>
+          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-labelledby="coffee-title">
+            <h3 id="coffee-title">ALOHA · Coffee making</h3>
+            <p class="application-description">ALOHA fits and locks the portafilter, places a cup and presses the espresso button.</p>
+            <figure>
+              <video controls playsinline preload="none" width="1920" height="1080"
+                poster="assets/images/aloha-coffee.jpg" aria-label="ALOHA coffee making demonstration" aria-describedby="coffee-caption">
+                <source src="assets/videos/aloha-coffee.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/aloha-coffee.mp4">Download the coffee making video</a>.
+              </video>
+              <figcaption id="coffee-caption">RealAppliance 011 espresso machine · Scripted simulation with assisted grasping and visual coffee effects · 72.7 seconds</figcaption>
+            </figure>
+            <a class="video-download" href="assets/videos/aloha-coffee.mp4" download>Download video ↓</a>
+          </article>
+          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-labelledby="bowl-loading-title">
+            <h3 id="bowl-loading-title">ALOHA · Bowl loading</h3>
+            <p class="application-description">ALOHA opens the cabinet, pulls out the rack, places a bowl inside and closes the cabinet.</p>
+            <figure>
+              <video controls playsinline preload="none" width="1920" height="1080"
+                poster="assets/images/aloha-bowl-loading.jpg" aria-label="ALOHA placing a bowl inside a kitchen cabinet" aria-describedby="bowl-loading-caption">
+                <source src="assets/videos/aloha-bowl-loading.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/aloha-bowl-loading.mp4">Download the bowl loading video</a>.
+              </video>
+              <figcaption id="bowl-loading-caption">RealProduct 086 cabinet · Scripted simulation with contact-qualified grasp assistance · 4 min 58 sec</figcaption>
+            </figure>
+            <a class="video-download" href="assets/videos/aloha-bowl-loading.mp4" download>Download video ↓</a>
+            <details class="application-credits">
+              <summary>Asset credits</summary>
+              <p>Serving bowl: <a href="https://github.com/NVlabs/RoboLab/tree/28b9313b26ddd6e5dc14b4926213352b08ca0139/assets/objects/vomp/serving_bowl">NVIDIA RoboLab VOMP</a>, © 2026 NVIDIA Corporation, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Adapted for simulation with USD conversion, material-input mapping and bounded convex decomposition.</p>
+            </details>
+          </article>
+        </div>
+        <div class="application-navigation" hidden>
+          <button type="button" class="application-arrow" data-direction="-1" aria-label="Previous application video" aria-controls="application-track" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg>
+          </button>
+          <span class="application-position" aria-live="polite" aria-atomic="true">1 / 3</span>
+          <button type="button" class="application-arrow" data-direction="1" aria-label="Next application video" aria-controls="application-track">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="dualarm-applications" class="application-carousel" role="region" aria-roledescription="carousel" aria-label="Dual-arm manipulation videos">
+        <div id="dualarm-track" class="application-track" tabindex="0" aria-label="Dual-arm videos. Use left and right arrow keys to browse.">
+          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="1 of 3" aria-labelledby="dualarm-air-fryer-title">
+            <h3 id="dualarm-air-fryer-title">Air fryer · Pull out the basket</h3>
+            <figure>
+              <video controls playsinline preload="none" width="1920" height="1080" poster="assets/images/dualarm-air-fryer.jpg" aria-label="Pulling out the air fryer basket">
+                <source src="assets/videos/dualarm-air-fryer.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/dualarm-air-fryer.mp4">Download the air fryer video</a>.
+              </video>
+              <figcaption>10.2 seconds</figcaption>
+            </figure>
+            <a class="video-download" href="assets/videos/dualarm-air-fryer.mp4" download>Download video ↓</a>
+          </article>
+          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-labelledby="dualarm-laptop-title">
+            <h3 id="dualarm-laptop-title">Laptop · Close the lid</h3>
+            <figure>
+              <video controls playsinline preload="none" width="1920" height="1080" poster="assets/images/dualarm-laptop.jpg" aria-label="Closing the laptop lid">
+                <source src="assets/videos/dualarm-laptop.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/dualarm-laptop.mp4">Download the laptop video</a>.
+              </video>
+              <figcaption>25.5 seconds</figcaption>
+            </figure>
+            <a class="video-download" href="assets/videos/dualarm-laptop.mp4" download>Download video ↓</a>
+          </article>
+          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-labelledby="dualarm-microwave-title">
+            <h3 id="dualarm-microwave-title">Microwave · Open the door</h3>
+            <figure>
+              <video controls playsinline preload="none" width="1920" height="1080" poster="assets/images/dualarm-microwave.jpg" aria-label="Opening the microwave door">
+                <source src="assets/videos/dualarm-microwave.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/dualarm-microwave.mp4">Download the microwave video</a>.
+              </video>
+              <figcaption>19.7 seconds</figcaption>
+            </figure>
+            <a class="video-download" href="assets/videos/dualarm-microwave.mp4" download>Download video ↓</a>
+          </article>
+        </div>
+        <div class="application-navigation" hidden>
+          <button type="button" class="application-arrow" data-direction="-1" aria-label="Previous dual-arm video" aria-controls="dualarm-track" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg>
+          </button>
+          <span class="application-position" aria-live="polite" aria-atomic="true">1 / 3</span>
+          <button type="button" class="application-arrow" data-direction="1" aria-label="Next dual-arm video" aria-controls="dualarm-track">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="sim-to-real" class="section" aria-labelledby="sim-to-real-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">07 / Sim-to-Real</p><h2 id="sim-to-real-title">Sim-to-Real Transfer</h2></div>
+      </div>
+      <figure>
+        <video controls playsinline preload="none" width="1920" height="1080"
+          poster="assets/images/sim-to-real.jpg" aria-label="Sim-to-real demonstration with simulation and real-world views" aria-describedby="sim-to-real-caption">
+          <source src="assets/videos/sim-to-real.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="assets/videos/sim-to-real.mp4">Download the sim-to-real video</a>.
+        </video>
+        <figcaption id="sim-to-real-caption">Simulation and real-world demonstration · 35.3 seconds</figcaption>
+      </figure>
+      <a class="video-download" href="assets/videos/sim-to-real.mp4" download>Download video ↓</a>
+    </section>
+
+    <section id="citation" class="section citation" aria-labelledby="citation-title">
+      <p class="eyebrow">08 / Reference</p>
+      <h2 id="citation-title">Citation</h2>
+      <p class="placeholder-copy">BibTeX will be available once the paper details are finalized.</p>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="#main">DualArt<span class="dot">.</span></a><p>Project page in preparation.</p></footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "005",
+    "title": "Display freezer",
+    "input": "assets/dataset-comparison/005/input.png",
+    "pose": "realproduct / 005",
+    "dataset": "realproduct",
+    "methods": [
+      {
+        "id": "SINGAPO",
+        "label": "SINGAPO",
+        "bundle": "assets/dataset-comparison/005/SINGAPO"
+      },
+      {
+        "id": "Articulate-Anything",
+        "label": "Articulate-Anything",
+        "bundle": "assets/dataset-comparison/005/Articulate-Anything"
+      },
+      {
+        "id": "PhysX-Anything",
+        "label": "PhysX-Anything",
+        "bundle": "assets/dataset-comparison/005/PhysX-Anything"
+      },
+      {
+        "id": "PhysX-Omni",
+        "label": "PhysX-Omni",
+        "bundle": "assets/dataset-comparison/005/PhysX-Omni"
+      },
+      {
+        "id": "Articraft",
+        "label": "Articraft",
+        "bundle": "assets/dataset-comparison/005/Articraft"
+      },
+      {
+        "id": "DualArt",
+        "label": "DualArt (Ours)",
+        "bundle": "assets/dataset-comparison/005/DualArt"
+      }
+    ]
+  },
+  {
+    "id": "007",
+    "title": "Blender",
+    "input": "assets/dataset-comparison/007/input.png",
+    "pose": "realappliance / 007",
+    "dataset": "realappliance",
+    "methods": [
+      {
+        "id": "SINGAPO",
+        "label": "SINGAPO",
+        "bundle": "assets/dataset-comparison/007/SINGAPO"
+      },
+      {
+        "id": "Articulate-Anything",
+        "label": "Articulate-Anything",
+        "bundle": "assets/dataset-comparison/007/Articulate-Anything"
+      },
+      {
+        "id": "PhysX-Anything",
+        "label": "PhysX-Anything",
+        "bundle": "assets/dataset-comparison/007/PhysX-Anything"
+      },
+      {
+        "id": "PhysX-Omni",
+        "label": "PhysX-Omni",
+        "bundle": "assets/dataset-comparison/007/PhysX-Omni"
+      },
+      {
+        "id": "Articraft",
+        "label": "Articraft",
+        "bundle": "assets/dataset-comparison/007/Articraft"
+      },
+      {
+        "id": "DualArt",
+        "label": "DualArt (Ours)",
+        "bundle": "assets/dataset-comparison/007/DualArt"
+      }
+    ]
+  },
+  {
+    "id": "307",
+    "title": "Washer & dryer",
+    "input": "assets/dataset-comparison/307/input.png",
+    "pose": "artvip / 307",
+    "dataset": "artvip",
+    "methods": [
+      {
+        "id": "SINGAPO",
+        "label": "SINGAPO",
+        "bundle": "assets/dataset-comparison/307/SINGAPO"
+      },
+      {
+        "id": "Articulate-Anything",
+        "label": "Articulate-Anything",
+        "bundle": "assets/dataset-comparison/307/Articulate-Anything"
+      },
+      {
+        "id": "PhysX-Anything",
+        "label": "PhysX-Anything",
+        "bundle": "assets/dataset-comparison/307/PhysX-Anything"
+      },
+      {
+        "id": "PhysX-Omni",
+        "label": "PhysX-Omni",
+        "bundle": "assets/dataset-comparison/307/PhysX-Omni"
+      },
+      {
+        "id": "Articraft",
+        "label": "Articraft",
+        "bundle": "assets/dataset-comparison/307/Articraft"
+      },
+      {
+        "id": "DualArt",
+        "label": "DualArt (Ours)",
+        "bundle": "assets/dataset-comparison/307/DualArt"
+      }
+    ]
+  }
+]

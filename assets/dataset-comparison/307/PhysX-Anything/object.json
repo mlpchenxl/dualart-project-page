@@ -1,0 +1,154 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "benchmark_root",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "abstract_5_0",
+      "label": "abstract_5_0",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          -45.0
+        ],
+        "axis": {
+          "origin": [
+            -0.18875,
+            -0.5,
+            0.229375
+          ],
+          "direction": [
+            6.123233995736766e-17,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "abstract_5_1",
+      "label": "abstract_5_1",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.0009375
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            -0.8983843609192009,
+            5.5010176600186996e-17,
+            -0.43921013200494263
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "abstract_5_2",
+      "label": "abstract_5_2",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.0009375
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            -0.8983843609192009,
+            5.5010176600186996e-17,
+            -0.43921013200494263
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "abstract_5_3",
+      "label": "abstract_5_3",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.0009375
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            -0.8983843609192009,
+            5.5010176600186996e-17,
+            -0.43921013200494263
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "abstract_5_4",
+      "label": "abstract_5_4",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.0009375
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            -0.8983843609192009,
+            5.5010176600186996e-17,
+            -0.43921013200494263
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": "arts-textured-sources-v1",
+  "frame": "object_rest_world",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "back_frame",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-6fb04a6637aaefb5e4e5f2a03fe141adc63b72473e111cc3c0e4ead9e213bc1b/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "front_legs_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-a492ed14cd84f0a95c4c3ab0132a44d229b991e4722020c887d72ab95a3af740/mesh.obj",
+          "transform": [
+            [
+              1.1951564291994614,
+              0.0,
+              -0.5997540743864878,
+              -0.0933501
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.5997540743864878,
+              0.0,
+              1.1951564291994614,
+              0.397
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "seat_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-789638c6bf5c4fe329c459a4308aa69b1554087b3150658aba412c7df68fdb04/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.0933501
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.447
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

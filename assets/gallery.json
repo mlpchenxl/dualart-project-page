@@ -1,0 +1,122 @@
+[
+  {
+    "id": "realproduct-003",
+    "dataset": "realproduct",
+    "object_id": "003",
+    "title": "Commercial freezer",
+    "model": "assets/models/realproduct-003/model.usdc",
+    "poster": "assets/models/realproduct-003/poster.jpg",
+    "bytes": 3935987,
+    "jointCount": 3,
+    "jointNames": {
+      "/World/part_03/RevoluteJoint_00": "door_1",
+      "/World/part_04/RevoluteJoint_01": "door_2",
+      "/World/part_05/RevoluteJoint_02": "door_3"
+    },
+    "frontQuat": null,
+    "frontYaw": 0,
+    "presentation": null
+  },
+  {
+    "id": "realproduct-005",
+    "dataset": "realproduct",
+    "object_id": "005",
+    "title": "Freezer",
+    "model": "assets/models/realproduct-005/model.usdc",
+    "poster": "assets/models/realproduct-005/poster.jpg",
+    "bytes": 3185290,
+    "jointCount": 4,
+    "jointNames": {
+      "/World/part_00/RevoluteJoint_00": "door_1",
+      "/World/part_02/RevoluteJoint_01": "door_2",
+      "/World/part_04/PrismaticJoint_00": "tray_1",
+      "/World/part_07/PrismaticJoint_01": "tray_2"
+    },
+    "frontQuat": null,
+    "frontYaw": 0,
+    "presentation": null
+  },
+  {
+    "id": "realproduct-006",
+    "dataset": "realproduct",
+    "object_id": "006",
+    "title": "Kitchen scale",
+    "model": "assets/models/realproduct-006/model.usdc",
+    "poster": "assets/models/realproduct-006/poster.jpg",
+    "bytes": 1386171,
+    "jointCount": 3,
+    "jointNames": {
+      "/root/E_button_01_38/PrismaticJoint_electronicscales_up": "button_1",
+      "/root/E_button_02_41/PrismaticJoint_electronicscales_up1": "button_2",
+      "/root/E_button_03_42/PrismaticJoint_electronicscales_up2": "button_3"
+    },
+    "frontQuat": null,
+    "frontYaw": 0,
+    "presentation": null
+  },
+  {
+    "id": "realproduct-015",
+    "dataset": "realproduct",
+    "object_id": "015",
+    "title": "Refrigerator",
+    "model": "assets/models/realproduct-015/model.usdc",
+    "poster": "assets/models/realproduct-015/poster.jpg",
+    "bytes": 21239885,
+    "jointCount": 5,
+    "jointNames": {
+      "/World/part_00/RevoluteJoint": "door_upper_1",
+      "/World/part_01/RevoluteJoint": "door_lower_1",
+      "/World/part_04/PrismaticJoint": "drawer_2",
+      "/World/part_05/PrismaticJoint": "drawer_3",
+      "/World/part_06/PrismaticJoint": "drawer_1"
+    },
+    "frontQuat": null,
+    "frontYaw": 0,
+    "presentation": null
+  },
+  {
+    "id": "realproduct-055",
+    "dataset": "realproduct",
+    "object_id": "055",
+    "title": "Laptop",
+    "model": "assets/models/realproduct-055/model.usdc",
+    "poster": "assets/models/realproduct-055/poster.jpg",
+    "bytes": 3363957,
+    "jointCount": 1,
+    "jointNames": {
+      "/World/part_00/RevoluteJoint": "screen_1"
+    },
+    "frontQuat": null,
+    "frontYaw": 0,
+    "presentation": null
+  },
+  {
+    "id": "realproduct-089",
+    "dataset": "realproduct",
+    "object_id": "089",
+    "title": "Office chair",
+    "model": "assets/models/realproduct-089/model.usdc",
+    "poster": "assets/models/realproduct-089/poster.jpg",
+    "bytes": 16295095,
+    "jointCount": 14,
+    "jointNames": {
+      "/root/E_backrest_14/RevoluteJoint_office_chair_up1": "backrest_1",
+      "/root/E_cushion1_26/RevoluteJoint_office_chair_up": "headrest_1",
+      "/root/E_handleright_29/RevoluteJoint_office_chair_right": "armrest_1",
+      "/root/E_handleright_30/RevoluteJoint_office_chair_left": "armrest_2",
+      "/root/E_linkwheel1_31/RevoluteJoint_office_chair_down1": "caster_1",
+      "/root/E_wheel_1_34/RevoluteJoint_office_chair_down6": "wheel_1",
+      "/root/E_wheel_1_38/RevoluteJoint_office_chair_down7": "wheel_2",
+      "/root/E_linkwheel1_42/RevoluteJoint_office_chair_down2": "caster_2",
+      "/root/E_wheel_1_45/RevoluteJoint_office_chair_down8": "wheel_3",
+      "/root/E_linkwheel1_49/RevoluteJoint_office_chair_down3": "caster_3",
+      "/root/E_linkwheel1_52/RevoluteJoint_office_chair_down4": "caster_4",
+      "/root/E_wheel_1_55/RevoluteJoint_office_chair_down9": "wheel_4",
+      "/root/E_linkwheel1_59/RevoluteJoint_office_chair_down5": "caster_5",
+      "/root/E_wheel_1_62/RevoluteJoint_office_chair_down10": "wheel_5"
+    },
+    "frontQuat": null,
+    "frontYaw": 0,
+    "presentation": null
+  }
+]

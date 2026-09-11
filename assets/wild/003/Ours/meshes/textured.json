@@ -1,0 +1,146 @@
+{
+  "schema_version": "arts-textured-sources-v1",
+  "frame": "object_rest_world",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "body",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-9cb569382f2b72c0b5698e5232cb15d2c6266dc6afff26f585329ad080d1cac3/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "lid_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-689c7f924477f07dabfd4f3a2ffe8be2301d7c6497ab4627d84d0dc036e71e3e/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.227
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.925
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "wheel_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-bbc2fae0492ceec9ef57ae768e10a7674a41a982aea70043138552c7dd628aad/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.17
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.22
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.1
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "wheel_2",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-bbba7552c660e48049c9c9f3c9e25c63c59ddace0ab3f4dd07f29a8ead4fc6cd/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.17
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.22
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.1
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

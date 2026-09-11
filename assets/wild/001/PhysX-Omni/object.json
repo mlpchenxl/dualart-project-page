@@ -1,0 +1,104 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "benchmark_root",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "abstract_0_5",
+      "label": "abstract_0_5",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -1.28671875
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            -1.0,
+            6.123233995736766e-17,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "abstract_0_7",
+      "label": "abstract_0_7",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -1.28671875
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            -1.0,
+            6.123233995736766e-17,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "abstract_0_9",
+      "label": "abstract_0_9",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -1.28671875
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            -1.0,
+            6.123233995736766e-17,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

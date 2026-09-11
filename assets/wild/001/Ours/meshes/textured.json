@@ -1,0 +1,111 @@
+{
+  "schema_version": "arts-textured-sources-v1",
+  "frame": "object_rest_world",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "cabinet",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-8db75e2d213ccacf346eb7300b7f8f2a87ddba00512ee3f3e55572d68efac439/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "drawer_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-f2100ae4532683dabc6104da96ee7c8b185a19a5b751bf3c9975b6c3bc7fb9f1/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.165
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.424
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "drawer_2",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-925ed066be9e7f58aa212e44708894411dc3dabe6428cce580b8708362b18cfe/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.165
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.192
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "chest",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "door_1",
+      "label": "door_1",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          90.00021045914971
+        ],
+        "axis": {
+          "origin": [
+            0.098,
+            0.619,
+            1.365
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "door_2",
+      "label": "door_2",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          90.00021045914971
+        ],
+        "axis": {
+          "origin": [
+            0.098,
+            -0.619,
+            1.365
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "tray_1",
+      "label": "tray_1",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.2
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.3,
+            0.779
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "tray_2",
+      "label": "tray_2",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.2
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            -0.3,
+            0.779
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

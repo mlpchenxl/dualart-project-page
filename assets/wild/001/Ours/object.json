@@ -1,0 +1,79 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "cabinet",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "drawer_1",
+      "label": "drawer_1",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.3
+        ],
+        "axis": {
+          "origin": [
+            0.165,
+            0.0,
+            0.424
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "drawer_2",
+      "label": "drawer_2",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.3
+        ],
+        "axis": {
+          "origin": [
+            0.165,
+            0.0,
+            0.192
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

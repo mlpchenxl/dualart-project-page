@@ -1,0 +1,245 @@
+{
+  "schema_version": "arts-textured-sources-v1",
+  "frame": "object_rest_world",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "washer",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-7d46dc51b2250fb643460072693be75c4fdf7a6f72e78e53a0283efe5f799fad/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "path": "assets/meshes/blender-890c6a9b1661d61609fed921cbf4ba12b5fa672ef251bd6a8315acc8aa43bcd8/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "door_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-69b03880edc1af75bd9901b1ca4ccc4e96cac07d3d942966e44dfecb10256445/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.183346
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.198
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.346388
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "drum_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-979c5bce2a90668e1f67f9ff0ea5f9b86c900cea56ff67fe4611915f4ba0217b/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.110144
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.346388
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "door_2",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-d884a52d8948ad9c1688bc4d08c3da75cf2bf1d25cb555574b80b5681a7a6202/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.0666309
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.097125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.955
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "drum_2",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-b17d2033c1bd16ce75bd5b13c140ac3d68eb4eb97226c71de785b7c00c0abe77/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.179923
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.955
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "knob_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-3c0373eb5193ab47faafe0d537c3bed968c1a1f074c953544457f8fbc463f329/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.184263
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.602624
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

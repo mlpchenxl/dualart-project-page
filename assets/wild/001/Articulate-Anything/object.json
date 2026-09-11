@@ -1,0 +1,104 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "base",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "drawer",
+      "label": "drawer",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.9566090242862707
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            1.0,
+            -6.123233995736767e-17,
+            6.123233995736767e-17
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "drawer_2",
+      "label": "drawer_2",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.9566090242862707
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            1.0,
+            -6.123233995736767e-17,
+            6.123233995736767e-17
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "drawer_3",
+      "label": "drawer_3",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.9566090242862707
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            1.0,
+            -6.123233995736767e-17,
+            6.123233995736767e-17
+          ]
+        }
+      }
+    }
+  ]
+}

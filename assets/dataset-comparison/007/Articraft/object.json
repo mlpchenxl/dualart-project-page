@@ -1,0 +1,179 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "base",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "control_button_0",
+      "label": "control_button_0",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0035
+        ],
+        "axis": {
+          "origin": [
+            0.097,
+            0.0,
+            0.052
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "control_button_1",
+      "label": "control_button_1",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0035
+        ],
+        "axis": {
+          "origin": [
+            0.097,
+            0.045,
+            0.052
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "pitcher",
+      "label": "pitcher",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.08
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.155
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "blade",
+      "label": "blade",
+      "parent": 3,
+      "joint": {
+        "type": "continuous",
+        "range": [
+          0.0,
+          360.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.161
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "lid",
+      "label": "lid",
+      "parent": 3,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.07
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.326
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "power_button",
+      "label": "power_button",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.004
+        ],
+        "axis": {
+          "origin": [
+            0.097,
+            -0.045,
+            0.052
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

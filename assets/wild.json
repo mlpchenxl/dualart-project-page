@@ -1,0 +1,116 @@
+[
+  {
+    "id": "002",
+    "title": "Folding chair",
+    "input": "assets/wild/002/input.png",
+    "pose": "unfolded, front view",
+    "methods": [
+      {
+        "id": "SINGAPO",
+        "label": "SINGAPO",
+        "bundle": "assets/wild/002/SINGAPO"
+      },
+      {
+        "id": "Articulate-Anything",
+        "label": "Articulate-Anything",
+        "bundle": "assets/wild/002/Articulate-Anything"
+      },
+      {
+        "id": "PhysX-Anything",
+        "label": "PhysX-Anything",
+        "bundle": "assets/wild/002/PhysX-Anything"
+      },
+      {
+        "id": "PhysX-Omni",
+        "label": "PhysX-Omni",
+        "bundle": "assets/wild/002/PhysX-Omni"
+      },
+      {
+        "id": "Articraft",
+        "label": "Articraft",
+        "bundle": "assets/wild/002/Articraft"
+      },
+      {
+        "id": "Ours",
+        "label": "DualArt (Ours)",
+        "bundle": "assets/wild/002/Ours"
+      }
+    ]
+  },
+  {
+    "id": "003",
+    "title": "Wheelie bin",
+    "input": "assets/wild/003/input.png",
+    "pose": "lid open",
+    "methods": [
+      {
+        "id": "SINGAPO",
+        "label": "SINGAPO",
+        "bundle": "assets/wild/003/SINGAPO"
+      },
+      {
+        "id": "Articulate-Anything",
+        "label": "Articulate-Anything",
+        "bundle": "assets/wild/003/Articulate-Anything"
+      },
+      {
+        "id": "PhysX-Anything",
+        "label": "PhysX-Anything",
+        "bundle": "assets/wild/003/PhysX-Anything"
+      },
+      {
+        "id": "PhysX-Omni",
+        "label": "PhysX-Omni",
+        "bundle": "assets/wild/003/PhysX-Omni"
+      },
+      {
+        "id": "Articraft",
+        "label": "Articraft",
+        "bundle": "assets/wild/003/Articraft"
+      },
+      {
+        "id": "Ours",
+        "label": "DualArt (Ours)",
+        "bundle": "assets/wild/003/Ours"
+      }
+    ]
+  },
+  {
+    "id": "001",
+    "title": "Bedside cabinet",
+    "input": "assets/wild/001/input.png",
+    "pose": "both drawers pulled open",
+    "methods": [
+      {
+        "id": "SINGAPO",
+        "label": "SINGAPO",
+        "bundle": "assets/wild/001/SINGAPO"
+      },
+      {
+        "id": "Articulate-Anything",
+        "label": "Articulate-Anything",
+        "bundle": "assets/wild/001/Articulate-Anything"
+      },
+      {
+        "id": "PhysX-Anything",
+        "label": "PhysX-Anything",
+        "bundle": "assets/wild/001/PhysX-Anything"
+      },
+      {
+        "id": "PhysX-Omni",
+        "label": "PhysX-Omni",
+        "bundle": "assets/wild/001/PhysX-Omni"
+      },
+      {
+        "id": "Articraft",
+        "label": "Articraft",
+        "bundle": "assets/wild/001/Articraft"
+      },
+      {
+        "id": "Ours",
+        "label": "DualArt (Ours)",
+        "bundle": "assets/wild/001/Ours"
+      }
+    ]
+  }
+]

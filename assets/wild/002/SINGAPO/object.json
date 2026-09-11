@@ -1,0 +1,28 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "joint": {
+        "axis": {
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "range": [
+          0.0,
+          0.0
+        ],
+        "type": "fixed"
+      },
+      "name": "base",
+      "parent": -1
+    }
+  ]
+}

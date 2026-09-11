@@ -1,0 +1,79 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "base",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "part_1",
+      "label": "part_1",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.1
+        ],
+        "axis": {
+          "origin": [
+            -0.01,
+            -0.01,
+            0.225
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "pitcher_lid_1",
+      "label": "pitcher_lid_1",
+      "parent": 1,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.1
+        ],
+        "axis": {
+          "origin": [
+            -0.01,
+            -0.01,
+            0.432
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  ]
+}

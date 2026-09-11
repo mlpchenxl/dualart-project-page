@@ -1,0 +1,111 @@
+{
+  "schema_version": "arts-textured-sources-v1",
+  "frame": "object_rest_world",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "base",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-14d463ab96809653df2663ff80492ed1ccbaafec79239e1576040befce59275f/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "part_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-8373dff062d1a31c4826d21ca1d9adc8c8305337eb2429977f2e95f4d53c465c/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.01
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.01
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.225
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "pitcher_lid_1",
+      "sources": [
+        {
+          "path": "assets/meshes/blender-0ef14a7bbfc9cfac1cf0c029ece2a3768acee03d2a51aefc32bd9cd62f9ae5ac/mesh.obj",
+          "transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.01
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.01
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.432
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

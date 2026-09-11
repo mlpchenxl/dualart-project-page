@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "artvip-307",
+    "title": "Washer & dryer",
+    "dataset": "artvip",
+    "object_id": "307",
+    "model": "assets/benchmark/artvip-307/model.usdc",
+    "poster": "assets/benchmark/artvip-307/appearance/t0/front_left.png",
+    "joints": [
+      {
+        "id": "door_1_joint",
+        "label": "door_1",
+        "family": "door",
+        "type": "revolute",
+        "parent": "base",
+        "child": "door_1",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "anchor": [
+          0.163630038,
+          -0.203037724,
+          0.3540048
+        ],
+        "limits": [
+          -1.570796326795,
+          0.0
+        ],
+        "limits_unit": "radians",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          -1.570796326795
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "door_1_1_joint",
+        "source_link": "/root/E_door_1_1",
+        "usd_path": "/root/E_door_1_1/RevoluteJoint_dryer_washer_3_down_1",
+        "usd_joint_name": "RevoluteJoint_dryer_washer_3_down_1"
+      },
+      {
+        "id": "drum_1_joint",
+        "label": "drum_1",
+        "family": "pivot",
+        "type": "revolute",
+        "parent": "base",
+        "child": "drum_1",
+        "axis": [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        "anchor": [
+          -0.090916448,
+          -0.000635398,
+          0.350610614
+        ],
+        "limits": [
+          0.0,
+          6.28318530718
+        ],
+        "limits_unit": "radians",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          6.28318530718
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "roller_1_2_joint",
+        "source_link": "/root/E_roller_1_2",
+        "usd_path": "/root/E_roller_1_2/RevoluteJoint_dryer_washer_3_down_2",
+        "usd_joint_name": "RevoluteJoint_dryer_washer_3_down_2"
+      },
+      {
+        "id": "knob_1_joint",
+        "label": "knob_1",
+        "family": "knob",
+        "type": "revolute",
+        "parent": "base",
+        "child": "knob_1",
+        "axis": [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        "anchor": [
+          0.171622351,
+          -6.4598e-05,
+          0.605704129
+        ],
+        "limits": [
+          0.0,
+          6.28318530718
+        ],
+        "limits_unit": "radians",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          6.28318530718
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "knob_3_joint",
+        "source_link": "/root/E_knob_3",
+        "usd_path": "/root/E_knob_3/RevoluteJoint_dryer_washer_3_down_3",
+        "usd_joint_name": "RevoluteJoint_dryer_washer_3_down_3"
+      },
+      {
+        "id": "door_2_joint",
+        "label": "door_2",
+        "family": "door",
+        "type": "revolute",
+        "parent": "base",
+        "child": "door_2",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "anchor": [
+          -0.056381349,
+          -0.093752496,
+          0.945289075
+        ],
+        "limits": [
+          -1.570796326795,
+          0.0
+        ],
+        "limits_unit": "radians",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          -1.570796326795
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "door_2_4_joint",
+        "source_link": "/root/E_door_2_4",
+        "usd_path": "/root/E_door_2_4/RevoluteJoint_dryer_washer_3_up_1",
+        "usd_joint_name": "RevoluteJoint_dryer_washer_3_up_1"
+      },
+      {
+        "id": "drum_2_joint",
+        "label": "drum_2",
+        "family": "pivot",
+        "type": "revolute",
+        "parent": "base",
+        "child": "drum_2",
+        "axis": [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        "anchor": [
+          -0.172644347,
+          0.005181202,
+          0.943558991
+        ],
+        "limits": [
+          0.0,
+          6.28318530718
+        ],
+        "limits_unit": "radians",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          6.28318530718
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "roller_2_5_joint",
+        "source_link": "/root/E_roller_2_5",
+        "usd_path": "/root/E_roller_2_5/RevoluteJoint_dryer_washer_3_up_2",
+        "usd_joint_name": "RevoluteJoint_dryer_washer_3_up_2"
+      }
+    ],
+    "parts": [
+      {
+        "label": "base",
+        "role": "base",
+        "parent": null,
+        "source_links": [],
+        "fixed_attachments": []
+      },
+      {
+        "label": "door_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "/root/E_door_1_1"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "drum_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "/root/E_roller_1_2"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "knob_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "/root/E_knob_3"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "door_2",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "/root/E_door_2_4"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "drum_2",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "/root/E_roller_2_5"
+        ],
+        "fixed_attachments": []
+      }
+    ],
+    "gtParts": {
+      "door_1": "/root/E_door_1_1",
+      "drum_1": "/root/E_roller_1_2",
+      "knob_1": "/root/E_knob_3",
+      "door_2": "/root/E_door_2_4",
+      "drum_2": "/root/E_roller_2_5"
+    },
+    "release": "release-orientation-2026-08-28",
+    "frames": {
+      "t0/front.png": "assets/benchmark/artvip-307/appearance/t0/front.png",
+      "t0/front_left.png": "assets/benchmark/artvip-307/appearance/t0/front_left.png",
+      "t0/front_right.png": "assets/benchmark/artvip-307/appearance/t0/front_right.png",
+      "t0/back.png": "assets/benchmark/artvip-307/appearance/t0/back.png",
+      "t0/back_left.png": "assets/benchmark/artvip-307/appearance/t0/back_left.png",
+      "t0/back_right.png": "assets/benchmark/artvip-307/appearance/t0/back_right.png",
+      "t0/top.png": "assets/benchmark/artvip-307/appearance/t0/top.png",
+      "t0/bottom.png": "assets/benchmark/artvip-307/appearance/t0/bottom.png",
+      "t1/front.png": "assets/benchmark/artvip-307/appearance/t1/front.png",
+      "t1/front_left.png": "assets/benchmark/artvip-307/appearance/t1/front_left.png",
+      "t1/front_right.png": "assets/benchmark/artvip-307/appearance/t1/front_right.png",
+      "t1/back.png": "assets/benchmark/artvip-307/appearance/t1/back.png",
+      "t1/back_left.png": "assets/benchmark/artvip-307/appearance/t1/back_left.png",
+      "t1/back_right.png": "assets/benchmark/artvip-307/appearance/t1/back_right.png",
+      "t1/top.png": "assets/benchmark/artvip-307/appearance/t1/top.png",
+      "t1/bottom.png": "assets/benchmark/artvip-307/appearance/t1/bottom.png",
+      "t2/front.png": "assets/benchmark/artvip-307/appearance/t2/front.png",
+      "t2/front_left.png": "assets/benchmark/artvip-307/appearance/t2/front_left.png",
+      "t2/front_right.png": "assets/benchmark/artvip-307/appearance/t2/front_right.png",
+      "t2/back.png": "assets/benchmark/artvip-307/appearance/t2/back.png",
+      "t2/back_left.png": "assets/benchmark/artvip-307/appearance/t2/back_left.png",
+      "t2/back_right.png": "assets/benchmark/artvip-307/appearance/t2/back_right.png",
+      "t2/top.png": "assets/benchmark/artvip-307/appearance/t2/top.png",
+      "t2/bottom.png": "assets/benchmark/artvip-307/appearance/t2/bottom.png",
+      "t3/front.png": "assets/benchmark/artvip-307/appearance/t3/front.png",
+      "t3/front_left.png": "assets/benchmark/artvip-307/appearance/t3/front_left.png",
+      "t3/front_right.png": "assets/benchmark/artvip-307/appearance/t3/front_right.png",
+      "t3/back.png": "assets/benchmark/artvip-307/appearance/t3/back.png",
+      "t3/back_left.png": "assets/benchmark/artvip-307/appearance/t3/back_left.png",
+      "t3/back_right.png": "assets/benchmark/artvip-307/appearance/t3/back_right.png",
+      "t3/top.png": "assets/benchmark/artvip-307/appearance/t3/top.png",
+      "t3/bottom.png": "assets/benchmark/artvip-307/appearance/t3/bottom.png",
+      "t4/front.png": "assets/benchmark/artvip-307/appearance/t4/front.png",
+      "t4/front_left.png": "assets/benchmark/artvip-307/appearance/t4/front_left.png",
+      "t4/front_right.png": "assets/benchmark/artvip-307/appearance/t4/front_right.png",
+      "t4/back.png": "assets/benchmark/artvip-307/appearance/t4/back.png",
+      "t4/back_left.png": "assets/benchmark/artvip-307/appearance/t4/back_left.png",
+      "t4/back_right.png": "assets/benchmark/artvip-307/appearance/t4/back_right.png",
+      "t4/top.png": "assets/benchmark/artvip-307/appearance/t4/top.png",
+      "t4/bottom.png": "assets/benchmark/artvip-307/appearance/t4/bottom.png"
+    },
+    "states": [
+      {
+        "id": "t0",
+        "t": 0.0
+      },
+      {
+        "id": "t1",
+        "t": 0.25
+      },
+      {
+        "id": "t2",
+        "t": 0.5
+      },
+      {
+        "id": "t3",
+        "t": 0.75
+      },
+      {
+        "id": "t4",
+        "t": 1.0
+      }
+    ],
+    "views": [
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": 28.0,
+        "id": "front"
+      },
+      {
+        "azimuth_deg": 45.0,
+        "elevation_deg": 28.0,
+        "id": "front_left"
+      },
+      {
+        "azimuth_deg": -45.0,
+        "elevation_deg": 28.0,
+        "id": "front_right"
+      },
+      {
+        "azimuth_deg": 180.0,
+        "elevation_deg": 28.0,
+        "id": "back"
+      },
+      {
+        "azimuth_deg": 135.0,
+        "elevation_deg": 28.0,
+        "id": "back_left"
+      },
+      {
+        "azimuth_deg": -135.0,
+        "elevation_deg": 28.0,
+        "id": "back_right"
+      },
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": 89.9,
+        "id": "top"
+      },
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": -89.9,
+        "id": "bottom"
+      }
+    ]
+  },
+  {
+    "id": "realproduct-005",
+    "title": "Freezer",
+    "dataset": "realproduct",
+    "object_id": "005",
+    "model": "assets/benchmark/realproduct-005/model.usdc",
+    "poster": "assets/benchmark/realproduct-005/appearance/t0/front_left.png",
+    "joints": [
+      {
+        "id": "door_1_joint",
+        "label": "door_1",
+        "family": "door",
+        "type": "revolute",
+        "parent": "base",
+        "child": "door_1",
+        "axis": [
+          0.0,
+          -0.0,
+          -1.0
+        ],
+        "anchor": [
+          0.020269999,
+          0.619229972,
+          0.370869994
+        ],
+        "limits": [
+          -1.570796326795,
+          0.0
+        ],
+        "limits_unit": "radians",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          -1.570796326795
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_00_joint",
+        "source_link": "part_00",
+        "usd_path": "/World/part_00/RevoluteJoint_00",
+        "usd_joint_name": "RevoluteJoint_00"
+      },
+      {
+        "id": "door_2_joint",
+        "label": "door_2",
+        "family": "door",
+        "type": "revolute",
+        "parent": "base",
+        "child": "door_2",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "anchor": [
+          0.02255,
+          -0.620949984,
+          0.370869994
+        ],
+        "limits": [
+          -1.570796326795,
+          0.0
+        ],
+        "limits_unit": "radians",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          -1.570796326795
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_02_joint",
+        "source_link": "part_02",
+        "usd_path": "/World/part_02/RevoluteJoint_01",
+        "usd_joint_name": "RevoluteJoint_01"
+      },
+      {
+        "id": "tray_1_joint",
+        "label": "tray_1",
+        "family": "drawer",
+        "type": "prismatic",
+        "parent": "base",
+        "child": "tray_1",
+        "axis": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "anchor": [
+          0.113030002,
+          0.296229988,
+          -0.261012048
+        ],
+        "limits": [
+          0.0,
+          0.20000000298
+        ],
+        "limits_unit": "meters",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          0.20000000298
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_04_joint",
+        "source_link": "part_04",
+        "usd_path": "/World/part_04/PrismaticJoint_00",
+        "usd_joint_name": "PrismaticJoint_00"
+      },
+      {
+        "id": "tray_2_joint",
+        "label": "tray_2",
+        "family": "drawer",
+        "type": "prismatic",
+        "parent": "base",
+        "child": "tray_2",
+        "axis": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "anchor": [
+          0.113029189,
+          -0.300009996,
+          -0.265689999
+        ],
+        "limits": [
+          0.0,
+          0.20000000298
+        ],
+        "limits_unit": "meters",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          0.20000000298
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_07_joint",
+        "source_link": "part_07",
+        "usd_path": "/World/part_07/PrismaticJoint_01",
+        "usd_joint_name": "PrismaticJoint_01"
+      }
+    ],
+    "parts": [
+      {
+        "label": "base",
+        "role": "base",
+        "parent": null,
+        "source_links": [
+          "part_01",
+          "part_03",
+          "part_05",
+          "part_06",
+          "part_08",
+          "part_09",
+          "part_10",
+          "part_11",
+          "part_12"
+        ],
+        "fixed_attachments": [
+          "static_1",
+          "static_2",
+          "static_3",
+          "static_4",
+          "static_5",
+          "static_6",
+          "static_7",
+          "static_8",
+          "static_9"
+        ]
+      },
+      {
+        "label": "door_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_00"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "door_2",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_02"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "tray_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_04"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "tray_2",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_07"
+        ],
+        "fixed_attachments": []
+      }
+    ],
+    "gtParts": {
+      "door_1": "part_00",
+      "door_2": "part_02",
+      "tray_1": "part_04",
+      "tray_2": "part_07",
+      "static_1": "part_01",
+      "static_2": "part_03",
+      "static_3": "part_05",
+      "static_4": "part_06",
+      "static_5": "part_08",
+      "static_6": "part_09",
+      "static_7": "part_10",
+      "static_8": "part_11",
+      "static_9": "part_12"
+    },
+    "release": "realproduct-owned-2026-09-04-v3-dense",
+    "frames": {
+      "t0/front.png": "assets/benchmark/realproduct-005/appearance/t0/front.png",
+      "t0/front_left.png": "assets/benchmark/realproduct-005/appearance/t0/front_left.png",
+      "t0/front_right.png": "assets/benchmark/realproduct-005/appearance/t0/front_right.png",
+      "t0/back.png": "assets/benchmark/realproduct-005/appearance/t0/back.png",
+      "t0/back_left.png": "assets/benchmark/realproduct-005/appearance/t0/back_left.png",
+      "t0/back_right.png": "assets/benchmark/realproduct-005/appearance/t0/back_right.png",
+      "t0/top.png": "assets/benchmark/realproduct-005/appearance/t0/top.png",
+      "t0/bottom.png": "assets/benchmark/realproduct-005/appearance/t0/bottom.png",
+      "t1/front.png": "assets/benchmark/realproduct-005/appearance/t1/front.png",
+      "t1/front_left.png": "assets/benchmark/realproduct-005/appearance/t1/front_left.png",
+      "t1/front_right.png": "assets/benchmark/realproduct-005/appearance/t1/front_right.png",
+      "t1/back.png": "assets/benchmark/realproduct-005/appearance/t1/back.png",
+      "t1/back_left.png": "assets/benchmark/realproduct-005/appearance/t1/back_left.png",
+      "t1/back_right.png": "assets/benchmark/realproduct-005/appearance/t1/back_right.png",
+      "t1/top.png": "assets/benchmark/realproduct-005/appearance/t1/top.png",
+      "t1/bottom.png": "assets/benchmark/realproduct-005/appearance/t1/bottom.png",
+      "t2/front.png": "assets/benchmark/realproduct-005/appearance/t2/front.png",
+      "t2/front_left.png": "assets/benchmark/realproduct-005/appearance/t2/front_left.png",
+      "t2/front_right.png": "assets/benchmark/realproduct-005/appearance/t2/front_right.png",
+      "t2/back.png": "assets/benchmark/realproduct-005/appearance/t2/back.png",
+      "t2/back_left.png": "assets/benchmark/realproduct-005/appearance/t2/back_left.png",
+      "t2/back_right.png": "assets/benchmark/realproduct-005/appearance/t2/back_right.png",
+      "t2/top.png": "assets/benchmark/realproduct-005/appearance/t2/top.png",
+      "t2/bottom.png": "assets/benchmark/realproduct-005/appearance/t2/bottom.png",
+      "t3/front.png": "assets/benchmark/realproduct-005/appearance/t3/front.png",
+      "t3/front_left.png": "assets/benchmark/realproduct-005/appearance/t3/front_left.png",
+      "t3/front_right.png": "assets/benchmark/realproduct-005/appearance/t3/front_right.png",
+      "t3/back.png": "assets/benchmark/realproduct-005/appearance/t3/back.png",
+      "t3/back_left.png": "assets/benchmark/realproduct-005/appearance/t3/back_left.png",
+      "t3/back_right.png": "assets/benchmark/realproduct-005/appearance/t3/back_right.png",
+      "t3/top.png": "assets/benchmark/realproduct-005/appearance/t3/top.png",
+      "t3/bottom.png": "assets/benchmark/realproduct-005/appearance/t3/bottom.png",
+      "t4/front.png": "assets/benchmark/realproduct-005/appearance/t4/front.png",
+      "t4/front_left.png": "assets/benchmark/realproduct-005/appearance/t4/front_left.png",
+      "t4/front_right.png": "assets/benchmark/realproduct-005/appearance/t4/front_right.png",
+      "t4/back.png": "assets/benchmark/realproduct-005/appearance/t4/back.png",
+      "t4/back_left.png": "assets/benchmark/realproduct-005/appearance/t4/back_left.png",
+      "t4/back_right.png": "assets/benchmark/realproduct-005/appearance/t4/back_right.png",
+      "t4/top.png": "assets/benchmark/realproduct-005/appearance/t4/top.png",
+      "t4/bottom.png": "assets/benchmark/realproduct-005/appearance/t4/bottom.png"
+    },
+    "states": [
+      {
+        "id": "t0",
+        "t": 0.0
+      },
+      {
+        "id": "t1",
+        "t": 0.25
+      },
+      {
+        "id": "t2",
+        "t": 0.5
+      },
+      {
+        "id": "t3",
+        "t": 0.75
+      },
+      {
+        "id": "t4",
+        "t": 1.0
+      }
+    ],
+    "views": [
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": 28.0,
+        "id": "front"
+      },
+      {
+        "azimuth_deg": 45.0,
+        "elevation_deg": 28.0,
+        "id": "front_left"
+      },
+      {
+        "azimuth_deg": -45.0,
+        "elevation_deg": 28.0,
+        "id": "front_right"
+      },
+      {
+        "azimuth_deg": 180.0,
+        "elevation_deg": 28.0,
+        "id": "back"
+      },
+      {
+        "azimuth_deg": 135.0,
+        "elevation_deg": 28.0,
+        "id": "back_left"
+      },
+      {
+        "azimuth_deg": -135.0,
+        "elevation_deg": 28.0,
+        "id": "back_right"
+      },
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": 89.9,
+        "id": "top"
+      },
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": -89.9,
+        "id": "bottom"
+      }
+    ]
+  },
+  {
+    "id": "realappliance-071",
+    "title": "Coffee machine",
+    "dataset": "realappliance",
+    "object_id": "071",
+    "model": "assets/benchmark/realappliance-071/model.usdc",
+    "poster": "assets/benchmark/realappliance-071/appearance/t0/front_left.png",
+    "joints": [
+      {
+        "id": "carafe_1_joint",
+        "label": "carafe_1",
+        "family": "drawer",
+        "type": "prismatic",
+        "parent": "base",
+        "child": "carafe_1",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "anchor": [
+          0.040049999,
+          -0.011099999,
+          0.122699998
+        ],
+        "limits": [
+          0.0,
+          0.15000000596
+        ],
+        "limits_unit": "meters",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          0.15000000596
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_00",
+        "source_link": "part_00",
+        "usd_path": "/World/part_00/part_00",
+        "usd_joint_name": "part_00"
+      },
+      {
+        "id": "time_setting_lever_1_joint",
+        "label": "time_setting_lever_1",
+        "family": "slider",
+        "type": "prismatic",
+        "parent": "base",
+        "child": "time_setting_lever_1",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "anchor": [
+          -0.040950005,
+          0.119899996,
+          0.057700001
+        ],
+        "limits": [
+          0.0,
+          0.009999999776
+        ],
+        "limits_unit": "meters",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          0.009999999776
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_07",
+        "source_link": "part_07",
+        "usd_path": "/World/part_07/part_07",
+        "usd_joint_name": "part_07"
+      },
+      {
+        "id": "on_off_button_1_joint",
+        "label": "on_off_button_1",
+        "family": "button",
+        "type": "prismatic",
+        "parent": "base",
+        "child": "on_off_button_1",
+        "axis": [
+          -0.799694322,
+          0.600407354,
+          0.0
+        ],
+        "anchor": [
+          0.085050004,
+          -0.085099998,
+          0.246700004
+        ],
+        "limits": [
+          0.0,
+          0.000500000024
+        ],
+        "limits_unit": "meters",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          0.000500000024
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_01",
+        "source_link": "part_01",
+        "usd_path": "/World/part_01/part_01",
+        "usd_joint_name": "part_01"
+      },
+      {
+        "id": "autostart_button_1_joint",
+        "label": "autostart_button_1",
+        "family": "button",
+        "type": "prismatic",
+        "parent": "base",
+        "child": "autostart_button_1",
+        "axis": [
+          -0.824399893,
+          -0.566007789,
+          0.0
+        ],
+        "anchor": [
+          0.085049999,
+          0.063900006,
+          0.246700004
+        ],
+        "limits": [
+          0.0,
+          0.000500000024
+        ],
+        "limits_unit": "meters",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          0.000500000024
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_06",
+        "source_link": "part_06",
+        "usd_path": "/World/part_06/part_06",
+        "usd_joint_name": "part_06"
+      },
+      {
+        "id": "4_cup_button_1_joint",
+        "label": "4_cup_button_1",
+        "family": "button",
+        "type": "prismatic",
+        "parent": "base",
+        "child": "4_cup_button_1",
+        "axis": [
+          -0.923224947,
+          -0.384259934,
+          0.0
+        ],
+        "anchor": [
+          0.099049998,
+          0.037900002,
+          0.246700004
+        ],
+        "limits": [
+          0.0,
+          0.000500000024
+        ],
+        "limits_unit": "meters",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          0.000500000024
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_05",
+        "source_link": "part_05",
+        "usd_path": "/World/part_05/part_05",
+        "usd_joint_name": "part_05"
+      },
+      {
+        "id": "aroma_button_1_joint",
+        "label": "aroma_button_1",
+        "family": "button",
+        "type": "prismatic",
+        "parent": "base",
+        "child": "aroma_button_1",
+        "axis": [
+          -0.947018049,
+          0.321180346,
+          0.0
+        ],
+        "anchor": [
+          0.099050001,
+          -0.058099995,
+          0.246700004
+        ],
+        "limits": [
+          0.0,
+          0.000500000024
+        ],
+        "limits_unit": "meters",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          0.000500000024
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_02",
+        "source_link": "part_02",
+        "usd_path": "/World/part_02/part_02",
+        "usd_joint_name": "part_02"
+      },
+      {
+        "id": "lid_1_joint",
+        "label": "lid_1",
+        "family": "lid",
+        "type": "revolute",
+        "parent": "base",
+        "child": "lid_1",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "anchor": [
+          -0.106615566,
+          -0.010274116,
+          0.321700007
+        ],
+        "limits": [
+          -1.570796326795,
+          0.0
+        ],
+        "limits_unit": "radians",
+        "rest_value": 0.0,
+        "eval_range": [
+          0.0,
+          -1.570796326795
+        ],
+        "eval_range_status": "ready",
+        "source_joint": "part_08",
+        "source_link": "part_08",
+        "usd_path": "/World/part_08/part_08",
+        "usd_joint_name": "part_08"
+      }
+    ],
+    "parts": [
+      {
+        "label": "base",
+        "role": "base",
+        "parent": null,
+        "source_links": [
+          "part_04",
+          "part_09",
+          "carafe_10",
+          "carafe_11",
+          "carafe_12",
+          "carafe_13"
+        ],
+        "fixed_attachments": [
+          "static_2",
+          "static_3",
+          "static_4",
+          "static_5",
+          "static_6",
+          "static_7"
+        ]
+      },
+      {
+        "label": "carafe_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_00",
+          "part_03"
+        ],
+        "fixed_attachments": [
+          "static_1"
+        ]
+      },
+      {
+        "label": "time_setting_lever_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_07"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "on_off_button_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_01"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "autostart_button_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_06"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "4_cup_button_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_05"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "aroma_button_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_02"
+        ],
+        "fixed_attachments": []
+      },
+      {
+        "label": "lid_1",
+        "role": "movable",
+        "parent": "base",
+        "source_links": [
+          "part_08"
+        ],
+        "fixed_attachments": []
+      }
+    ],
+    "gtParts": {
+      "carafe_1": "part_00",
+      "time_setting_lever_1": "part_07",
+      "on_off_button_1": "part_01",
+      "autostart_button_1": "part_06",
+      "4_cup_button_1": "part_05",
+      "aroma_button_1": "part_02",
+      "lid_1": "part_08",
+      "static_1": "part_03",
+      "static_2": "part_04",
+      "static_3": "part_09",
+      "static_4": "carafe_10",
+      "static_5": "carafe_11",
+      "static_6": "carafe_12",
+      "static_7": "carafe_13"
+    },
+    "release": "2026-08-23-ra-r003",
+    "frames": {
+      "t0/front.png": "assets/benchmark/realappliance-071/appearance/t0/front.png",
+      "t0/front_left.png": "assets/benchmark/realappliance-071/appearance/t0/front_left.png",
+      "t0/front_right.png": "assets/benchmark/realappliance-071/appearance/t0/front_right.png",
+      "t0/back.png": "assets/benchmark/realappliance-071/appearance/t0/back.png",
+      "t0/back_left.png": "assets/benchmark/realappliance-071/appearance/t0/back_left.png",
+      "t0/back_right.png": "assets/benchmark/realappliance-071/appearance/t0/back_right.png",
+      "t0/top.png": "assets/benchmark/realappliance-071/appearance/t0/top.png",
+      "t0/bottom.png": "assets/benchmark/realappliance-071/appearance/t0/bottom.png",
+      "t1/front.png": "assets/benchmark/realappliance-071/appearance/t1/front.png",
+      "t1/front_left.png": "assets/benchmark/realappliance-071/appearance/t1/front_left.png",
+      "t1/front_right.png": "assets/benchmark/realappliance-071/appearance/t1/front_right.png",
+      "t1/back.png": "assets/benchmark/realappliance-071/appearance/t1/back.png",
+      "t1/back_left.png": "assets/benchmark/realappliance-071/appearance/t1/back_left.png",
+      "t1/back_right.png": "assets/benchmark/realappliance-071/appearance/t1/back_right.png",
+      "t1/top.png": "assets/benchmark/realappliance-071/appearance/t1/top.png",
+      "t1/bottom.png": "assets/benchmark/realappliance-071/appearance/t1/bottom.png",
+      "t2/front.png": "assets/benchmark/realappliance-071/appearance/t2/front.png",
+      "t2/front_left.png": "assets/benchmark/realappliance-071/appearance/t2/front_left.png",
+      "t2/front_right.png": "assets/benchmark/realappliance-071/appearance/t2/front_right.png",
+      "t2/back.png": "assets/benchmark/realappliance-071/appearance/t2/back.png",
+      "t2/back_left.png": "assets/benchmark/realappliance-071/appearance/t2/back_left.png",
+      "t2/back_right.png": "assets/benchmark/realappliance-071/appearance/t2/back_right.png",
+      "t2/top.png": "assets/benchmark/realappliance-071/appearance/t2/top.png",
+      "t2/bottom.png": "assets/benchmark/realappliance-071/appearance/t2/bottom.png",
+      "t3/front.png": "assets/benchmark/realappliance-071/appearance/t3/front.png",
+      "t3/front_left.png": "assets/benchmark/realappliance-071/appearance/t3/front_left.png",
+      "t3/front_right.png": "assets/benchmark/realappliance-071/appearance/t3/front_right.png",
+      "t3/back.png": "assets/benchmark/realappliance-071/appearance/t3/back.png",
+      "t3/back_left.png": "assets/benchmark/realappliance-071/appearance/t3/back_left.png",
+      "t3/back_right.png": "assets/benchmark/realappliance-071/appearance/t3/back_right.png",
+      "t3/top.png": "assets/benchmark/realappliance-071/appearance/t3/top.png",
+      "t3/bottom.png": "assets/benchmark/realappliance-071/appearance/t3/bottom.png",
+      "t4/front.png": "assets/benchmark/realappliance-071/appearance/t4/front.png",
+      "t4/front_left.png": "assets/benchmark/realappliance-071/appearance/t4/front_left.png",
+      "t4/front_right.png": "assets/benchmark/realappliance-071/appearance/t4/front_right.png",
+      "t4/back.png": "assets/benchmark/realappliance-071/appearance/t4/back.png",
+      "t4/back_left.png": "assets/benchmark/realappliance-071/appearance/t4/back_left.png",
+      "t4/back_right.png": "assets/benchmark/realappliance-071/appearance/t4/back_right.png",
+      "t4/top.png": "assets/benchmark/realappliance-071/appearance/t4/top.png",
+      "t4/bottom.png": "assets/benchmark/realappliance-071/appearance/t4/bottom.png"
+    },
+    "states": [
+      {
+        "id": "t0",
+        "t": 0.0
+      },
+      {
+        "id": "t1",
+        "t": 0.25
+      },
+      {
+        "id": "t2",
+        "t": 0.5
+      },
+      {
+        "id": "t3",
+        "t": 0.75
+      },
+      {
+        "id": "t4",
+        "t": 1.0
+      }
+    ],
+    "views": [
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": 28.0,
+        "id": "front"
+      },
+      {
+        "azimuth_deg": 45.0,
+        "elevation_deg": 28.0,
+        "id": "front_left"
+      },
+      {
+        "azimuth_deg": -45.0,
+        "elevation_deg": 28.0,
+        "id": "front_right"
+      },
+      {
+        "azimuth_deg": 180.0,
+        "elevation_deg": 28.0,
+        "id": "back"
+      },
+      {
+        "azimuth_deg": 135.0,
+        "elevation_deg": 28.0,
+        "id": "back_left"
+      },
+      {
+        "azimuth_deg": -135.0,
+        "elevation_deg": 28.0,
+        "id": "back_right"
+      },
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": 89.9,
+        "id": "top"
+      },
+      {
+        "azimuth_deg": 0.0,
+        "elevation_deg": -89.9,
+        "id": "bottom"
+      }
+    ]
+  }
+]

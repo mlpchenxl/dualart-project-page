@@ -1,0 +1,104 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "benchmark_root",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "abstract_1_0",
+      "label": "abstract_1_0",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          -180.0
+        ],
+        "axis": {
+          "origin": [
+            -0.19687500000000005,
+            -0.5,
+            0.478125
+          ],
+          "direction": [
+            6.123233995736766e-17,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "abstract_1_2",
+      "label": "abstract_1_2",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          180.0
+        ],
+        "axis": {
+          "origin": [
+            -0.09468750000000006,
+            -0.5,
+            -0.35343749999999996
+          ],
+          "direction": [
+            6.123233995736766e-17,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "abstract_1_3",
+      "label": "abstract_1_3",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          180.0
+        ],
+        "axis": {
+          "origin": [
+            -0.17781250000000007,
+            -0.5,
+            -0.34781249999999997
+          ],
+          "direction": [
+            6.123233995736766e-17,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

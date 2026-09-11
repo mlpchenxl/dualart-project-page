@@ -1,0 +1,204 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "chest_body",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "chest_lid_0",
+      "label": "chest_lid_0",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          60.160568488736445
+        ],
+        "axis": {
+          "origin": [
+            -0.03,
+            0.24,
+            0.85
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "chest_lid_1",
+      "label": "chest_lid_1",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          60.160568488736445
+        ],
+        "axis": {
+          "origin": [
+            -0.03,
+            -0.24,
+            0.85
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "control_button_0",
+      "label": "control_button_0",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.003
+        ],
+        "axis": {
+          "origin": [
+            0.351,
+            0.1,
+            0.58
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "control_button_1",
+      "label": "control_button_1",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.003
+        ],
+        "axis": {
+          "origin": [
+            0.351,
+            0.18,
+            0.58
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "control_button_2",
+      "label": "control_button_2",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.003
+        ],
+        "axis": {
+          "origin": [
+            0.351,
+            0.26,
+            0.58
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "display_door_0",
+      "label": "display_door_0",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          97.40282517223994
+        ],
+        "axis": {
+          "origin": [
+            -0.04,
+            0.48,
+            1.29
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "display_door_1",
+      "label": "display_door_1",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          97.40282517223994
+        ],
+        "axis": {
+          "origin": [
+            -0.04,
+            -0.48,
+            1.29
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        }
+      }
+    }
+  ]
+}

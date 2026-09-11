@@ -1,0 +1,204 @@
+{
+  "diffuse_tree": [
+    {
+      "id": 0,
+      "name": "base",
+      "label": "dryer_body",
+      "parent": -1,
+      "joint": {
+        "type": "fixed",
+        "range": [
+          0.0,
+          0.0
+        ],
+        "axis": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "button_0",
+      "label": "button_0",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0015
+        ],
+        "axis": {
+          "origin": [
+            0.313,
+            0.15,
+            0.7
+          ],
+          "direction": [
+            0.9999999999932538,
+            0.0,
+            -3.6732051033465744e-06
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "button_1",
+      "label": "button_1",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0015
+        ],
+        "axis": {
+          "origin": [
+            0.313,
+            0.2,
+            0.7
+          ],
+          "direction": [
+            0.9999999999932538,
+            0.0,
+            -3.6732051033465744e-06
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "door",
+      "label": "door",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          94.53803619658582
+        ],
+        "axis": {
+          "origin": [
+            0.31,
+            -0.215,
+            0.36
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "knob",
+      "label": "knob",
+      "parent": 0,
+      "joint": {
+        "type": "continuous",
+        "range": [
+          0.0,
+          360.0
+        ],
+        "axis": {
+          "origin": [
+            0.326,
+            -0.14,
+            0.7
+          ],
+          "direction": [
+            0.9999999999932538,
+            0.0,
+            -3.6732051033465744e-06
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "lint_drawer",
+      "label": "lint_drawer",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          0.08
+        ],
+        "axis": {
+          "origin": [
+            0.31,
+            0.2,
+            0.09
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "top_button",
+      "label": "top_button",
+      "parent": 0,
+      "joint": {
+        "type": "prismatic",
+        "range": [
+          0.0,
+          -0.0012
+        ],
+        "axis": {
+          "origin": [
+            0.1625,
+            0.14,
+            1.026
+          ],
+          "direction": [
+            0.9999999999932538,
+            0.0,
+            -3.6732051033465744e-06
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "top_door",
+      "label": "top_door",
+      "parent": 0,
+      "joint": {
+        "type": "revolute",
+        "range": [
+          0.0,
+          85.94366926962348
+        ],
+        "axis": {
+          "origin": [
+            0.16,
+            -0.13,
+            1.006
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        }
+      }
+    }
+  ]
+}
