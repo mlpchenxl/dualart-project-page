@@ -38,7 +38,6 @@ h2 { font-size: 30px; font-weight: 600; letter-spacing: -.8px; line-height: 1.25
 .section-heading .pending { margin: 0; }
 .method-figure img { width: 100%; border-radius: 0; }
 .method-figure a { display: block; }
-.video-download { display: inline-block; margin-top: 14px; color: var(--accent); font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
 video { width: 100%; background: #eef1ed; }
 .citation { border-bottom: 0; }
 .application-description { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
