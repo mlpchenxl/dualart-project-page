@@ -22,8 +22,8 @@
 .wild-controls button:disabled { opacity: .5; cursor: default; }
 .wild-controls input[type="range"] { flex: 1; min-width: 130px; accent-color: var(--accent); }
 .wild-controls output { min-width: 34px; font-variant-numeric: tabular-nums; }
-#dataset-results { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
-#dataset-results > h3 { font-size: 22px; font-weight: 600; margin: 0 0 22px; }
+.experiment-results + .experiment-results { margin-top: 44px; padding-top: 32px; border-top: 1px solid var(--line); }
+.experiment-results > h3 { font-size: 22px; font-weight: 600; margin: 0 0 22px; }
 .wild-materials { display: flex; align-items: center; gap: 5px; }
 @media (max-width: 680px) {
   .wild-panel { width: 100%; left: auto; transform: none; }

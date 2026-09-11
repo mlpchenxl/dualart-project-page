@@ -28,7 +28,7 @@
       <a href="#method">Method</a>
       <a href="#dataset">Dataset</a>
       <a href="#benchmark">Benchmark</a>
-      <a href="#in-the-wild">In-the-Wild</a>
+      <a href="#experiment">Experiment</a>
       <a href="#applications">Applications</a>
       <a href="#sim-to-real">Sim-to-Real</a>
       <a href="#citation">Citation</a>
@@ -187,7 +187,13 @@
         </details>
         <noscript><p>Enable JavaScript to explore metrics. The benchmark video above explains the protocol.</p></noscript>
       </div>
-      <div id="dataset-results" aria-labelledby="dataset-results-title">
+    </section>
+
+    <section id="experiment" class="section" aria-labelledby="experiment-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">05 / Experiment</p><h2 id="experiment-title">Experiment</h2></div>
+      </div>
+      <div id="dataset-results" class="experiment-results" aria-labelledby="dataset-results-title">
         <h3 id="dataset-results-title">Dataset Results</h3>
         <div id="dataset-explorer" data-comparison="dataset" data-manifest="assets/dataset-comparison.json">
           <div class="wild-choices" aria-label="Choose an input object"></div>
@@ -211,32 +217,30 @@
           <noscript><p>Enable JavaScript to explore the reconstructed objects.</p></noscript>
         </div>
       </div>
-    </section>
 
-    <section id="in-the-wild" class="section" aria-labelledby="wild-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">05 / In-the-Wild</p><h2 id="wild-title">In-the-Wild Results</h2></div>
-      </div>
-      <div id="wild-explorer" data-comparison="wild" data-manifest="assets/wild.json">
-        <div class="wild-choices" aria-label="Choose an input object"></div>
-        <p id="wild-status" role="status">Loading examples…</p>
-        <div class="wild-panel">
-          <canvas id="wild-canvas" aria-hidden="true"></canvas>
-          <div class="wild-scroll" tabindex="0" aria-label="Input and six method results, including DualArt. Scroll horizontally to see all methods.">
-            <div class="wild-grid">
-              <figure class="wild-input"><h3>Input image</h3><img id="wild-input-image" alt=""><figcaption id="wild-input-caption"></figcaption></figure>
+      <div id="in-the-wild" class="experiment-results" aria-labelledby="wild-title">
+        <h3 id="wild-title">In-the-Wild Results</h3>
+        <div id="wild-explorer" data-comparison="wild" data-manifest="assets/wild.json">
+          <div class="wild-choices" aria-label="Choose an input object"></div>
+          <p id="wild-status" role="status">Loading examples…</p>
+          <div class="wild-panel">
+            <canvas id="wild-canvas" aria-hidden="true"></canvas>
+            <div class="wild-scroll" tabindex="0" aria-label="Input and six method results, including DualArt. Scroll horizontally to see all methods.">
+              <div class="wild-grid">
+                <figure class="wild-input"><h3>Input image</h3><img id="wild-input-image" alt=""><figcaption id="wild-input-caption"></figcaption></figure>
+              </div>
             </div>
           </div>
+          <div class="wild-controls">
+            <button id="wild-play" type="button" disabled>Play motion</button>
+            <label for="wild-state">Joint motion</label>
+            <input id="wild-state" type="range" min="0" max="1" step="0.01" value="0" disabled>
+            <output id="wild-state-value" for="wild-state">0%</output>
+            <label class="wild-materials"><input id="wild-materials" type="checkbox" disabled> Original appearance</label>
+            <button id="wild-reset" type="button" disabled>Reset views</button>
+          </div>
+          <noscript><p>Enable JavaScript to explore the reconstructed objects.</p></noscript>
         </div>
-        <div class="wild-controls">
-          <button id="wild-play" type="button" disabled>Play motion</button>
-          <label for="wild-state">Joint motion</label>
-          <input id="wild-state" type="range" min="0" max="1" step="0.01" value="0" disabled>
-          <output id="wild-state-value" for="wild-state">0%</output>
-          <label class="wild-materials"><input id="wild-materials" type="checkbox" disabled> Original appearance</label>
-          <button id="wild-reset" type="button" disabled>Reset views</button>
-        </div>
-        <noscript><p>Enable JavaScript to explore the reconstructed objects.</p></noscript>
       </div>
     </section>
 
