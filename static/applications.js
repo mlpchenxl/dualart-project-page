@@ -1,3 +1,10 @@
+for (const grid of document.querySelectorAll('.application-grid')) {
+  const videos = [...grid.querySelectorAll('video')];
+  videos.forEach(video => video.addEventListener('play', () => {
+    videos.forEach(other => { if (other !== video) other.pause(); });
+  }));
+}
+
 for (const carousel of document.querySelectorAll('.application-carousel')) {
   const track = carousel.querySelector('.application-track');
   const slides = [...track.querySelectorAll('.application-slide')];

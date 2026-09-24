@@ -1,4 +1,4 @@
-// Adapted from src/benchmark/wild_web/static/scene.js; see website/README.md.
+// Adapted from src/benchmark/benchmark_wild_web/static/scene.js; see website/README.md.
 import * as THREE from "three";
 import { OrbitControls } from "../viewer/vendor/OrbitControls.js";
 import { OBJLoader } from "../viewer/vendor/OBJLoader.js";

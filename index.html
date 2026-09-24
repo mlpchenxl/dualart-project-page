@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="DualArt: Dual-Workspace Generation of Articulated Assets from Images.">
+  <meta name="description" content="DualCraft: Dual-Workspace Generation of Articulated Assets from Images.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#fafaf8">
-  <title>DualArt: Dual-Workspace Generation of Articulated Assets from Images</title>
-  <link rel="stylesheet" href="static/style.css">
+  <title>DualCraft: Dual-Workspace Generation of Articulated Assets from Images</title>
+  <link rel="stylesheet" href="static/style.css?v=method-centered-20260925">
   <link rel="stylesheet" href="static/gallery.css">
   <link rel="stylesheet" href="static/benchmark/explorer.css">
-  <link rel="stylesheet" href="static/wild/explorer.css">
+  <link rel="stylesheet" href="static/wild/explorer.css?v=full-width-20260925">
   <script type="importmap">
     {"imports": {"three": "./static/viewer/vendor/three.module.js"}}
   </script>
   <script type="module" src="static/gallery.js"></script>
   <script type="module" src="static/benchmark/explorer.js"></script>
-  <script type="module" src="static/applications.js"></script>
+  <script type="module" src="static/applications.js?v=aloha-grid-20260924"></script>
+  <script type="module" src="static/hero.js?v=20260924b"></script>
   <script type="module" src="static/wild/explorer.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#main" aria-label="DualArt home">DualArt<span class="dot">.</span></a>
+    <a class="wordmark" href="#main" aria-label="DualCraft home">DualCraft<span class="dot">.</span></a>
     <nav aria-label="Page sections">
       <a href="#overview">Overview</a>
       <a href="#method">Method</a>
@@ -38,35 +39,42 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="project-title">
-      <h1 id="project-title">DualArt</h1>
+      <video id="hero-video" class="hero-background" autoplay muted loop playsinline preload="metadata"
+        poster="assets/images/kitchen.jpg?v=4d4b3a8b2a29" aria-hidden="true" tabindex="-1">
+        <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/kitchen-4d4b3a8b2a29.mp4?v=4d4b3a8b2a29" type="video/mp4">
+      </video>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+      <h1 id="project-title">DualCraft</h1>
       <p class="hero-subtitle">Dual-Workspace Generation of Articulated Assets from Images</p>
-      <p class="pending">Authors and affiliations to be added.</p>
       <div class="resources" aria-label="Project resources, not yet available">
         <button type="button" disabled>Paper <span>Coming soon</span></button>
         <button type="button" disabled>Code <span>Coming soon</span></button>
         <button type="button" disabled>Data <span>Coming soon</span></button>
       </div>
-      <figure class="teaser">
-        <video controls controlslist="nodownload" playsinline preload="metadata" width="1920" height="1080"
-          poster="assets/images/kitchen.jpg?v=a0e0a1f878f4" aria-label="Kitchen scene showcase" aria-describedby="teaser-caption">
-          <source src="assets/videos/kitchen.mp4?v=a0e0a1f878f4" type="video/mp4">
-          Your browser does not support embedded video.
-        </video>
-        <figcaption id="teaser-caption">Articulated objects in a kitchen and living space · Scene showcase · 110 seconds</figcaption>
-      </figure>
+      </div>
     </section>
 
     <section id="scene-showcase" class="section" aria-labelledby="scene-title">
       <div class="section-heading">
         <h2 id="scene-title">Scene Showcase</h2>
       </div>
-      <figure id="overview-intro">
-        <video controls controlslist="nodownload" playsinline preload="none" width="1280" height="720"
-          poster="assets/images/overview-intro.jpg" aria-label="Scene showcase">
-          <source src="assets/videos/overview-intro.mp4" type="video/mp4">
+      <div class="scene-grid">
+      <figure id="kitchen-showcase" class="teaser">
+        <video controls controlslist="nodownload" playsinline preload="metadata" width="1920" height="1080"
+          poster="assets/images/kitchen.jpg?v=4d4b3a8b2a29" aria-label="Kitchen scene showcase">
+          <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/kitchen-4d4b3a8b2a29.mp4?v=4d4b3a8b2a29" type="video/mp4">
           Your browser does not support embedded video.
         </video>
       </figure>
+      <figure id="overview-intro">
+        <video controls controlslist="nodownload" playsinline preload="none" width="1280" height="720"
+          poster="assets/images/overview-intro.jpg" aria-label="Scene showcase">
+          <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/overview-intro-b8e9f4060382.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+      </figure>
+      </div>
     </section>
 
     <section id="overview" class="section abstract" aria-labelledby="abstract-title">
@@ -81,25 +89,30 @@
         <div><p class="eyebrow">02 / Approach</p><h2 id="method-title">Method</h2></div>
       </div>
       <figure class="method-figure">
-        <a href="assets/images/method.jpg" target="_blank" rel="noopener" aria-label="View the full method diagram in a new tab">
-          <img src="assets/images/method.jpg" width="941" height="533" loading="lazy"
-            alt="Dual-workspace reconstruction pipeline: an input image becomes a VLM blueprint; visual editing generates parts and rendered views, assembly code compiles the asset, and visual comparisons plus geometry and motion checks guide edits before exporting the assembled URDF and part meshes.">
+        <a href="assets/pdfs/figure_2.pdf?v=e9e111688433" target="_blank" rel="noopener" aria-label="View the full method diagram PDF in a new tab">
+          <img src="assets/images/figure_2.png?v=e9e111688433" width="3200" height="2136" loading="lazy"
+            alt="DualCraft method: an input photo guides camera anchoring and a part blueprint. Geometry and program workspaces iterate through edits, model rebuilding, structure checks, and render comparisons, tracking differences to produce a simulation-ready articulated asset.">
         </a>
+      </figure>
+      <figure class="method-replay">
+        <video controls controlslist="nodownload" muted playsinline preload="none" width="1920" height="1080"
+          poster="assets/images/method-replay.jpg?v=e55445174baf" aria-label="Full dual-workspace method replay, without audio">
+          <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/method-replay-e55445174baf.mp4?v=e55445174baf" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
       </figure>
     </section>
 
     <section id="dataset" class="section" aria-labelledby="dataset-title">
       <div class="section-heading">
         <div><p class="eyebrow">03 / Dataset</p><h2 id="dataset-title">RealProduct Dataset</h2></div>
-        <p class="pending">111 seconds · 1080p</p>
       </div>
       <figure>
         <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
-          poster="assets/images/realproduct-dataset.jpg" aria-label="RealProduct dataset showcase" aria-describedby="dataset-caption">
-          <source src="assets/videos/realproduct-dataset.mp4" type="video/mp4">
+          poster="assets/images/realproduct-dataset.jpg" aria-label="RealProduct dataset showcase">
+          <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/realproduct-dataset-2ce8ddd7e507.mp4" type="video/mp4">
           Your browser does not support embedded video.
         </video>
-        <figcaption id="dataset-caption">A continuous gallery tour of 114 collected RealProduct assets, showing their geometry and articulated motion.</figcaption>
       </figure>
       <div class="gallery-heading">
         <h3>Explore individual objects</h3>
@@ -132,12 +145,11 @@
     <section id="benchmark" class="section" aria-labelledby="benchmark-title">
       <div class="section-heading">
         <div><p class="eyebrow">04 / Benchmark</p><h2 id="benchmark-title">Benchmark &amp; evaluation protocol</h2></div>
-        <p class="pending">49.4 seconds · 1080p</p>
       </div>
       <figure>
         <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
           poster="assets/images/benchmark.jpg" aria-label="Benchmark evaluation protocol showcase">
-          <source src="assets/videos/benchmark.mp4" type="video/mp4">
+          <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/benchmark-c769a2518b7d.mp4" type="video/mp4">
           Your browser does not support embedded video.
         </video>
       </figure>
@@ -208,7 +220,7 @@
           <p id="dataset-status" role="status">Loading examples…</p>
           <div class="wild-panel">
             <canvas id="dataset-canvas" aria-hidden="true"></canvas>
-            <div class="wild-scroll" tabindex="0" aria-label="Input and six method results, including DualArt. Scroll horizontally to see all methods.">
+            <div class="wild-scroll" tabindex="0" aria-label="Input and six method results, including DualCraft. Scroll horizontally to see all methods.">
               <div class="wild-grid">
                 <figure class="wild-input"><h3>Input image</h3><img id="dataset-input-image" alt=""><figcaption id="dataset-input-caption"></figcaption></figure>
               </div>
@@ -233,7 +245,7 @@
           <p id="wild-status" role="status">Loading examples…</p>
           <div class="wild-panel">
             <canvas id="wild-canvas" aria-hidden="true"></canvas>
-            <div class="wild-scroll" tabindex="0" aria-label="Input and six method results, including DualArt. Scroll horizontally to see all methods.">
+            <div class="wild-scroll" tabindex="0" aria-label="Input and six method results, including DualCraft. Scroll horizontally to see all methods.">
               <div class="wild-grid">
                 <figure class="wild-input"><h3>Input image</h3><img id="wild-input-image" alt=""><figcaption id="wild-input-caption"></figcaption></figure>
               </div>
@@ -255,102 +267,124 @@
     <section id="applications" class="section" aria-labelledby="applications-title">
       <div class="section-heading">
         <div><p class="eyebrow">06 / Applications</p><h2 id="applications-title">Applications</h2></div>
-        <p class="pending">Robot manipulation</p>
       </div>
-      <div class="application-carousel" role="region" aria-roledescription="carousel" aria-label="Robot application videos">
-        <div id="application-track" class="application-track" tabindex="0" aria-label="Application videos. Use left and right arrow keys to browse.">
-          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="1 of 3" aria-labelledby="fridge-retrieval-title">
+      <div class="application-grid" role="region" aria-label="Robot application videos">
+        <div id="application-track" class="application-track" aria-label="Nine ALOHA application videos">
+          <article class="application-slide" role="group" aria-label="1 of 9" aria-labelledby="fridge-retrieval-title">
             <h3 id="fridge-retrieval-title">ALOHA · Refrigerator retrieval</h3>
-            <p class="application-description">ALOHA opens a RealProduct refrigerator, reaches inside and retrieves a drink bottle.</p>
             <figure>
               <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
-                poster="assets/images/aloha-fridge-retrieval.jpg" aria-label="ALOHA refrigerator opening and bottle retrieval demonstration" aria-describedby="fridge-retrieval-caption">
-                <source src="assets/videos/aloha-fridge-retrieval.mp4" type="video/mp4">
+                poster="assets/images/aloha-fridge-retrieval.jpg?v=0ffd5e5967c3" aria-label="ALOHA refrigerator opening and bottle retrieval demonstration">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-fridge-retrieval-0ffd5e5967c3.mp4?v=0ffd5e5967c3" type="video/mp4">
                 Your browser does not support embedded video.
               </video>
-              <figcaption id="fridge-retrieval-caption">RealProduct 015 refrigerator + RealProduct 029 bottle · Scripted simulation with contact-confirmed grasp assistance · 40.7 seconds</figcaption>
             </figure>
           </article>
-          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-labelledby="coffee-title">
+          <article class="application-slide" role="group" aria-label="2 of 9" aria-labelledby="coffee-title">
             <h3 id="coffee-title">ALOHA · Coffee making</h3>
-            <p class="application-description">ALOHA fits and locks the portafilter, places a cup and presses the espresso button.</p>
             <figure>
               <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
-                poster="assets/images/aloha-coffee.jpg?v=e14a7fc95fa0" aria-label="ALOHA coffee making demonstration" aria-describedby="coffee-caption">
-                <source src="assets/videos/aloha-coffee.mp4?v=e14a7fc95fa0" type="video/mp4">
+                poster="assets/images/aloha-coffee.jpg?v=4470f184b128" aria-label="ALOHA coffee making demonstration">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-coffee-4470f184b128.mp4?v=4470f184b128" type="video/mp4">
                 Your browser does not support embedded video.
               </video>
-              <figcaption id="coffee-caption">Generated espresso machine · Scripted simulation with assisted grasping and visual coffee effects · 75.7 seconds</figcaption>
             </figure>
           </article>
-          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-labelledby="bowl-loading-title">
+          <article class="application-slide" role="group" aria-label="3 of 9" aria-labelledby="bowl-loading-title">
             <h3 id="bowl-loading-title">ALOHA · Bowl loading</h3>
-            <p class="application-description">ALOHA opens the cabinet, pulls out the rack, places a bowl inside and closes the cabinet.</p>
             <figure>
               <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
-                poster="assets/images/aloha-bowl-loading.jpg" aria-label="ALOHA placing a bowl inside a kitchen cabinet" aria-describedby="bowl-loading-caption">
-                <source src="assets/videos/aloha-bowl-loading.mp4" type="video/mp4">
+                poster="assets/images/aloha-bowl-loading.jpg?v=50c0c90ce697" aria-label="ALOHA placing a bowl inside a kitchen cabinet">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-bowl-loading-50c0c90ce697.mp4?v=50c0c90ce697" type="video/mp4">
                 Your browser does not support embedded video.
               </video>
-              <figcaption id="bowl-loading-caption">RealProduct 086 cabinet · Scripted simulation with contact-qualified grasp assistance · 4 min 58 sec</figcaption>
             </figure>
-            <details class="application-credits">
-              <summary>Asset credits</summary>
-              <p>Serving bowl: <a href="https://github.com/NVlabs/RoboLab/tree/28b9313b26ddd6e5dc14b4926213352b08ca0139/assets/objects/vomp/serving_bowl">NVIDIA RoboLab VOMP</a>, © 2026 NVIDIA Corporation, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Adapted for simulation with USD conversion, material-input mapping and bounded convex decomposition.</p>
-            </details>
           </article>
-        </div>
-        <div class="application-navigation" hidden>
-          <button type="button" class="application-arrow" data-direction="-1" aria-label="Previous application video" aria-controls="application-track" disabled>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg>
-          </button>
-          <span class="application-position" aria-live="polite" aria-atomic="true">1 / 3</span>
-          <button type="button" class="application-arrow" data-direction="1" aria-label="Next application video" aria-controls="application-track">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg>
-          </button>
+          <article class="application-slide" role="group" aria-label="4 of 9" aria-labelledby="aloha-orange-juice-title">
+            <h3 id="aloha-orange-juice-title">ALOHA + Revo2 · Orange juice</h3>
+            <figure>
+              <video controls controlslist="nodownload" playsinline preload="none" width="1280" height="720" poster="assets/images/aloha-orange-juice.jpg?v=0ed1f4662b66" aria-label="ALOHA + Revo2 · Orange juice">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-orange-juice-0ed1f4662b66.mp4?v=0ed1f4662b66" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+            </figure>
+          </article>
+          <article class="application-slide" role="group" aria-label="5 of 9" aria-labelledby="aloha-laundry-title">
+            <h3 id="aloha-laundry-title">ALOHA · Laundry removal</h3>
+            <figure>
+              <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/aloha-laundry.jpg?v=ee1e4d0202ca" aria-label="ALOHA · Laundry removal">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-laundry-ee1e4d0202ca.mp4?v=ee1e4d0202ca" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+            </figure>
+          </article>
+          <article class="application-slide" role="group" aria-label="6 of 9" aria-labelledby="aloha-open-door-title">
+            <h3 id="aloha-open-door-title">ALOHA · Open an interior door</h3>
+            <figure>
+              <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/aloha-open-door.jpg?v=85bd7eb19f18" aria-label="ALOHA · Open an interior door">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-open-door-85bd7eb19f18.mp4?v=85bd7eb19f18" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+            </figure>
+          </article>
+          <article class="application-slide" role="group" aria-label="7 of 9" aria-labelledby="aloha-pour-milk-title">
+            <h3 id="aloha-pour-milk-title">ALOHA · Pour milk into a pot</h3>
+            <figure>
+              <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/aloha-pour-milk.jpg?v=6385f1dfa77a" aria-label="ALOHA · Pour milk into a pot">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-pour-milk-6385f1dfa77a.mp4?v=6385f1dfa77a" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+            </figure>
+          </article>
+          <article class="application-slide" role="group" aria-label="8 of 9" aria-labelledby="aloha-push-chair-title">
+            <h3 id="aloha-push-chair-title">ALOHA · Store an office chair</h3>
+            <figure>
+              <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/aloha-push-chair.jpg?v=2eea9aa41f65" aria-label="ALOHA · Store an office chair">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-push-chair-2eea9aa41f65.mp4?v=2eea9aa41f65" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+            </figure>
+          </article>
+          <article class="application-slide" role="group" aria-label="9 of 9" aria-labelledby="aloha-toast-bread-title">
+            <h3 id="aloha-toast-bread-title">ALOHA · Toast and serve</h3>
+            <figure>
+              <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/aloha-toast-bread.jpg?v=cef70f886894" aria-label="ALOHA · Toast and serve">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/aloha-toast-bread-cef70f886894.mp4?v=cef70f886894" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+            </figure>
+          </article>
         </div>
       </div>
-      <div id="dualarm-applications" class="application-carousel" role="region" aria-roledescription="carousel" aria-label="Dual-arm manipulation videos">
-        <div id="dualarm-track" class="application-track" tabindex="0" aria-label="Dual-arm videos. Use left and right arrow keys to browse.">
-          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="1 of 3" aria-labelledby="dualarm-air-fryer-title">
+      <div id="dualarm-applications" class="application-grid" role="region" aria-label="Dual-arm manipulation videos">
+        <div id="dualarm-track" class="application-track" aria-label="Three fixed dual-arm experiments">
+          <article class="application-slide" role="group" aria-label="1 of 3" aria-labelledby="dualarm-air-fryer-title">
             <h3 id="dualarm-air-fryer-title">Air fryer · Pull out the basket</h3>
             <figure>
               <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/dualarm-air-fryer.jpg" aria-label="Pulling out the air fryer basket">
-                <source src="assets/videos/dualarm-air-fryer.mp4" type="video/mp4">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/dualarm-air-fryer-2a295fa0607f.mp4" type="video/mp4">
                 Your browser does not support embedded video.
               </video>
-              <figcaption>10.2 seconds</figcaption>
             </figure>
           </article>
-          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-labelledby="dualarm-laptop-title">
+          <article class="application-slide" role="group" aria-label="2 of 3" aria-labelledby="dualarm-laptop-title">
             <h3 id="dualarm-laptop-title">Laptop · Close the lid</h3>
             <figure>
               <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/dualarm-laptop.jpg" aria-label="Closing the laptop lid">
-                <source src="assets/videos/dualarm-laptop.mp4" type="video/mp4">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/dualarm-laptop-4246242d893b.mp4" type="video/mp4">
                 Your browser does not support embedded video.
               </video>
-              <figcaption>25.5 seconds</figcaption>
             </figure>
           </article>
-          <article class="application-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-labelledby="dualarm-microwave-title">
+          <article class="application-slide" role="group" aria-label="3 of 3" aria-labelledby="dualarm-microwave-title">
             <h3 id="dualarm-microwave-title">Microwave · Open the door</h3>
             <figure>
               <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080" poster="assets/images/dualarm-microwave.jpg" aria-label="Opening the microwave door">
-                <source src="assets/videos/dualarm-microwave.mp4" type="video/mp4">
+                <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/dualarm-microwave-fdc4464cbb28.mp4" type="video/mp4">
                 Your browser does not support embedded video.
               </video>
-              <figcaption>19.7 seconds</figcaption>
             </figure>
           </article>
-        </div>
-        <div class="application-navigation" hidden>
-          <button type="button" class="application-arrow" data-direction="-1" aria-label="Previous dual-arm video" aria-controls="dualarm-track" disabled>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg>
-          </button>
-          <span class="application-position" aria-live="polite" aria-atomic="true">1 / 3</span>
-          <button type="button" class="application-arrow" data-direction="1" aria-label="Next dual-arm video" aria-controls="dualarm-track">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg>
-          </button>
         </div>
       </div>
     </section>
@@ -361,11 +395,10 @@
       </div>
       <figure>
         <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
-          poster="assets/images/sim-to-real.jpg" aria-label="Sim-to-real demonstration with simulation and real-world views" aria-describedby="sim-to-real-caption">
-          <source src="assets/videos/sim-to-real.mp4" type="video/mp4">
+          poster="assets/images/sim-to-real.jpg" aria-label="Sim-to-real demonstration with simulation and real-world views">
+          <source src="https://github.com/mlpchenxl/dualart-project-page/releases/download/website-media-20260925/sim-to-real-af581f9b500d.mp4" type="video/mp4">
           Your browser does not support embedded video.
         </video>
-        <figcaption id="sim-to-real-caption">Simulation and real-world demonstration · 35.3 seconds</figcaption>
       </figure>
     </section>
 
@@ -375,6 +408,6 @@
       <p class="placeholder-copy">BibTeX will be available once the paper details are finalized.</p>
     </section>
   </main>
-  <footer><a class="wordmark" href="#main">DualArt<span class="dot">.</span></a><p>Project page in preparation.</p></footer>
+  <footer><a class="wordmark" href="#main">DualCraft<span class="dot">.</span></a><p>Project page in preparation.</p></footer>
 </body>
 </html>

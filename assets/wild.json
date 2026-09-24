@@ -32,7 +32,7 @@
       },
       {
         "id": "Ours",
-        "label": "DualArt (Ours)",
+        "label": "DualCraft (Ours)",
         "bundle": "assets/wild/002/Ours"
       }
     ]
@@ -70,7 +70,7 @@
       },
       {
         "id": "Ours",
-        "label": "DualArt (Ours)",
+        "label": "DualCraft (Ours)",
         "bundle": "assets/wild/003/Ours"
       }
     ]
@@ -108,7 +108,7 @@
       },
       {
         "id": "Ours",
-        "label": "DualArt (Ours)",
+        "label": "DualCraft (Ours)",
         "bundle": "assets/wild/001/Ours"
       }
     ]

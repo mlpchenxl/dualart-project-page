@@ -1,4 +1,4 @@
-# DualArt
+# DualCraft
 
 Dual-Workspace Generation of Articulated Assets from Images
 

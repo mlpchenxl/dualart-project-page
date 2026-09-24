@@ -33,7 +33,7 @@
       },
       {
         "id": "DualArt",
-        "label": "DualArt (Ours)",
+        "label": "DualCraft (Ours)",
         "bundle": "assets/dataset-comparison/005/DualArt"
       }
     ]
@@ -72,7 +72,7 @@
       },
       {
         "id": "DualArt",
-        "label": "DualArt (Ours)",
+        "label": "DualCraft (Ours)",
         "bundle": "assets/dataset-comparison/007/DualArt"
       }
     ]
@@ -111,7 +111,7 @@
       },
       {
         "id": "DualArt",
-        "label": "DualArt (Ours)",
+        "label": "DualCraft (Ours)",
         "bundle": "assets/dataset-comparison/307/DualArt"
       }
     ]
