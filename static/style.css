@@ -46,7 +46,6 @@ figcaption { color: var(--muted); font-size: 12px; margin-top: 14px; }
 .abstract { text-align: left; padding-top: 76px; }
 .abstract-copy { max-width: 1200px; margin: 32px auto 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.85; color: var(--ink); }
 .abstract-copy p { margin: 0; }
-.abstract-copy p + p { margin-top: 1.1em; }
 h2 { font-size: 30px; font-weight: 600; letter-spacing: -.8px; line-height: 1.25; margin: 0 0 22px; }
 .placeholder-copy { color: var(--muted); font-size: 16px; line-height: 1.9; margin: 0; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
