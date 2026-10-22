@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#fafaf8">
   <title>DualCraft: Dual-Workspace Generation of Articulated Assets from Images</title>
-  <link rel="stylesheet" href="static/style.css?v=chapter-labels-34-20260925">
+  <link rel="stylesheet" href="static/style.css?v=4fc27bb96057">
   <link rel="stylesheet" href="static/gallery.css">
   <link rel="stylesheet" href="static/benchmark/explorer.css">
   <link rel="stylesheet" href="static/wild/explorer.css?v=full-width-20260925">
@@ -18,25 +18,54 @@
   <script type="module" src="static/benchmark/explorer.js"></script>
   <script type="module" src="static/applications.js?v=aloha-grid-20260924"></script>
   <script type="module" src="static/hero.js?v=20260924b"></script>
+  <script type="module" src="static/contents.js?v=0825648513b2"></script>
   <script type="module" src="static/wild/explorer.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="wordmark" href="#main" aria-label="DualCraft home">DualCraft<span class="dot">.</span></a>
-    <nav aria-label="Page sections">
-      <a href="#overview">Overview</a>
-      <a href="#method">Method</a>
-      <a href="#dataset">Dataset</a>
-      <a href="#benchmark">Benchmark</a>
-      <a href="#experiment">Experiment</a>
-      <a href="#applications">Applications</a>
-      <a href="#sim-to-real">Sim-to-Real</a>
-      <a href="#citation">Citation</a>
-    </nav>
     <span class="draft-label">In preparation</span>
   </header>
 
+  <div class="page-shell">
+  <aside class="page-sidebar" aria-label="Table of contents">
+    <details id="page-contents" open>
+      <summary class="contents-title">Contents<span class="contents-chevron" aria-hidden="true"></span></summary>
+      <nav id="contents-nav" aria-label="Page sections">
+        <ol class="contents-list">
+          <li><a class="toc-link" href="#scene-showcase" aria-current="location"><span class="toc-number" aria-hidden="true">01</span>Scene demos</a></li>
+          <li><a class="toc-link" href="#overview"><span class="toc-number" aria-hidden="true">02</span>Overview</a></li>
+          <li><a class="toc-link" href="#method"><span class="toc-number" aria-hidden="true">03</span>Method</a></li>
+          <li><a class="toc-link" href="#dataset"><span class="toc-number" aria-hidden="true">04</span>RealProduct Dataset</a></li>
+          <li><a class="toc-link" href="#benchmark"><span class="toc-number" aria-hidden="true">05</span>Benchmark</a></li>
+          <li>
+            <div class="toc-row">
+              <a class="toc-link" href="#experiment"><span class="toc-number" aria-hidden="true">06</span>Experiments</a>
+              <button class="toc-expand" type="button" aria-expanded="false" aria-controls="toc-experiment" aria-label="Expand experiment subsections"><span class="contents-chevron" aria-hidden="true"></span></button>
+            </div>
+            <ul id="toc-experiment" class="toc-sublist" hidden>
+              <li><a href="#dataset-results">Dataset results</a></li>
+              <li><a href="#in-the-wild">In-the-Wild results</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="toc-row">
+              <a class="toc-link" href="#applications"><span class="toc-number" aria-hidden="true">07</span>Manipulation</a>
+              <button class="toc-expand" type="button" aria-expanded="false" aria-controls="toc-applications" aria-label="Expand manipulation subsections"><span class="contents-chevron" aria-hidden="true"></span></button>
+            </div>
+            <ul id="toc-applications" class="toc-sublist" hidden>
+              <li><a href="#application-track">Mobile ALOHA</a></li>
+              <li><a href="#dualarm-applications">Fixed dual-arm</a></li>
+            </ul>
+          </li>
+          <li><a class="toc-link" href="#sim-to-real"><span class="toc-number" aria-hidden="true">08</span>Sim-to-Real</a></li>
+          <li><a class="toc-link" href="#citation"><span class="toc-number" aria-hidden="true">09</span>Citation</a></li>
+        </ol>
+        <a class="contents-top" href="#main">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </details>
+  </aside>
   <main id="main">
     <section class="hero" aria-labelledby="project-title">
       <video id="hero-video" class="hero-background" autoplay muted loop playsinline preload="metadata"
@@ -57,7 +86,7 @@
 
     <section id="scene-showcase" class="section" aria-labelledby="scene-title">
       <div class="section-heading">
-        <h2 id="scene-title">Scene Showcase</h2>
+        <div><p class="eyebrow">01 / Scenes</p><h2 id="scene-title">Scene Showcase</h2></div>
       </div>
       <div class="scene-grid">
       <figure id="kitchen-showcase" class="teaser">
@@ -78,7 +107,7 @@
     </section>
 
     <section id="overview" class="section abstract" aria-labelledby="abstract-title">
-      <p class="eyebrow">01 / Overview</p>
+      <p class="eyebrow">02 / Overview</p>
       <h2 id="abstract-title">Abstract</h2>
       <div class="abstract-copy">
         <p>Interactive articulated objects such as doors and home appliances are crucial in robotics, but creating their sim-ready assets remains labor-intensive. Generating them from images is hard because part geometry and motion structure must be recovered jointly: refining geometry changes assembly positions and clearances, while motion errors may require geometric fixes. We present DualCraft, a dual-workspace agent that models articulated objects from images without additional training. Its geometry workspace refines part shapes and materials against the images, and its program workspace defines the assembly and joints and checks their motion; shared part frames keep the two consistent. We also build Real-Product, 114 handcrafted articulated objects across 9 categories and 57 product types, and ARTS-Bench, a 706-object benchmark that scores geometry and appearance at rest and in motion. DualCraft achieves the best score on every ARTS-Bench metric against five baselines, reducing Chamfer distance at rest by 38% relative to the strongest, and ablations show that its visual feedback and geometry checks catch different errors. Its assets load directly into Isaac Sim for robot manipulation. We will release the code, dataset, and benchmark.</p>
@@ -87,7 +116,7 @@
 
     <section id="method" class="section" aria-labelledby="method-title">
       <div class="section-heading">
-        <div><p class="eyebrow">02 / Approach</p><h2 id="method-title">Method</h2></div>
+        <div><p class="eyebrow">03 / Approach</p><h2 id="method-title">Method</h2></div>
       </div>
       <figure class="method-figure">
         <a href="assets/pdfs/figure_2.pdf?v=e9e111688433" target="_blank" rel="noopener" aria-label="View the full method diagram PDF in a new tab">
@@ -106,7 +135,7 @@
 
     <section id="dataset" class="section" aria-labelledby="dataset-title">
       <div class="section-heading">
-        <div><p class="eyebrow">03 / Dataset</p><h2 id="dataset-title">RealProduct Dataset</h2></div>
+        <div><p class="eyebrow">04 / Dataset</p><h2 id="dataset-title">RealProduct Dataset</h2></div>
       </div>
       <figure>
         <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
@@ -145,7 +174,7 @@
 
     <section id="benchmark" class="section" aria-labelledby="benchmark-title">
       <div class="section-heading">
-        <div><p class="eyebrow">04 / Benchmark</p><h2 id="benchmark-title">Benchmark &amp; evaluation protocol</h2></div>
+        <div><p class="eyebrow">05 / Benchmark</p><h2 id="benchmark-title">Benchmark &amp; evaluation protocol</h2></div>
       </div>
       <figure>
         <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
@@ -212,7 +241,7 @@
 
     <section id="experiment" class="section" aria-labelledby="experiment-title">
       <div class="section-heading">
-        <div><p class="eyebrow">05 / Experiment</p><h2 id="experiment-title">Experiment</h2></div>
+        <div><p class="eyebrow">06 / Experiment</p><h2 id="experiment-title">Experiment</h2></div>
       </div>
       <div id="dataset-results" class="experiment-results" aria-labelledby="dataset-results-title">
         <h3 id="dataset-results-title">Dataset Results</h3>
@@ -267,7 +296,7 @@
 
     <section id="applications" class="section" aria-labelledby="applications-title">
       <div class="section-heading">
-        <div><p class="eyebrow">06 / Applications</p><h2 id="applications-title">Applications</h2></div>
+        <div><p class="eyebrow">07 / Applications</p><h2 id="applications-title">Applications</h2></div>
       </div>
       <div class="application-grid" role="region" aria-label="Robot application videos">
         <div id="application-track" class="application-track" aria-label="Nine ALOHA application videos">
@@ -392,7 +421,7 @@
 
     <section id="sim-to-real" class="section" aria-labelledby="sim-to-real-title">
       <div class="section-heading">
-        <div><p class="eyebrow">07 / Sim-to-Real</p><h2 id="sim-to-real-title">Sim-to-Real Transfer</h2></div>
+        <div><p class="eyebrow">08 / Sim-to-Real</p><h2 id="sim-to-real-title">Sim-to-Real Transfer</h2></div>
       </div>
       <figure>
         <video controls controlslist="nodownload" playsinline preload="none" width="1920" height="1080"
@@ -404,11 +433,12 @@
     </section>
 
     <section id="citation" class="section citation" aria-labelledby="citation-title">
-      <p class="eyebrow">08 / Reference</p>
+      <p class="eyebrow">09 / Reference</p>
       <h2 id="citation-title">Citation</h2>
       <p class="placeholder-copy">BibTeX will be available once the paper details are finalized.</p>
     </section>
   </main>
+  </div>
   <footer><a class="wordmark" href="#main">DualCraft<span class="dot">.</span></a><p>Project page in preparation.</p></footer>
 </body>
 </html>
