@@ -33,7 +33,7 @@ details[open] > .contents-title > .contents-chevron, .toc-expand[aria-expanded="
 .toc-expand:hover { color: var(--toc-accent); background: var(--toc-active); }
 .toc-sublist a { display: flex; align-items: center; min-height: 44px; padding: 8px 10px 8px 42px; border-radius: 6px; color: var(--muted); font-size: 13px; line-height: 1.45; }
 .contents-top { display: flex; align-items: center; gap: 10px; min-height: 44px; margin: 22px 10px 0; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
-main { min-width: 0; width: 100%; }
+main { min-width: 0; width: 100%; max-width: 1200px; justify-self: center; }
 main > .section { width: 100%; margin-inline: auto; }
 .page-shell .hero { border-radius: 14px; }
 .hero { position: relative; isolation: isolate; display: grid; place-items: center; min-height: max(640px, calc(100svh - 76px)); overflow: hidden; background: #191d1c; color: #fff; text-align: center; padding: 80px 32px 100px; }
