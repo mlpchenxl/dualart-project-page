@@ -49,8 +49,8 @@ main { min-width: 0; width: 100%; }
 .hero .hero-subtitle { max-width: 1120px; margin: 0 auto 46px; font-size: clamp(28px, 3vw, 46px); font-weight: 700; line-height: 1.42; letter-spacing: 0; text-wrap: balance; text-shadow: 0 2px 18px #0004; }
 .hero-subtitle > span { display: block; }
 .hero .resources { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; max-width: 1080px; margin: 0 auto; }
-.hero .resources button { display: flex; align-items: center; justify-content: center; gap: 9px; min-width: 0; min-height: 54px; color: #fff; background: #ffffff22; border: 1px solid #ffffff70; border-radius: 999px; padding: 12px 16px; font-size: 16px; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
-.hero .resources button span { margin: 0; color: #ffffffd9; font-size: 12px; white-space: nowrap; }
+.hero .resources :is(button, a) { display: flex; align-items: center; justify-content: center; gap: 9px; min-width: 0; min-height: 54px; color: #fff; background: #ffffff22; border: 1px solid #ffffff70; border-radius: 999px; padding: 12px 16px; font-size: 16px; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.hero .resources :is(button, a) span { margin: 0; color: #ffffffd9; font-size: 12px; white-space: nowrap; }
 .hero .resources svg { width: 20px; height: 20px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .hero :focus-visible { outline-color: #fff; }
 .eyebrow { color: var(--accent); font-size: 34px; font-weight: 750; line-height: 1.4; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 0 14px; }
@@ -58,8 +58,8 @@ h1 { font-size: clamp(66px, 12vw, 104px); line-height: 1.05; letter-spacing: -5p
 .hero-subtitle { font-size: clamp(23px, 4vw, 36px); line-height: 1.3; letter-spacing: -.8px; margin: 0 0 18px; }
 .pending { color: var(--muted); font-size: 13px; }
 .resources { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 27px 0 48px; }
-.resources button { font: inherit; font-size: 13px; background: #eff2ef; color: #596562; border: 1px solid var(--line); border-radius: 7px; padding: 8px 16px; }
-.resources button span { font-size: 10px; margin-left: 8px; color: var(--muted); }
+.resources :is(button, a) { font: inherit; font-size: 13px; background: #eff2ef; color: #596562; border: 1px solid var(--line); border-radius: 7px; padding: 8px 16px; }
+.resources :is(button, a) span { font-size: 10px; margin-left: 8px; color: var(--muted); }
 figure { margin: 0; }
 .scene-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .scene-grid figure { min-width: 0; }
@@ -142,7 +142,7 @@ img, video { display: block; max-width: 100%; height: auto; border-radius: 12px;
   .hero h1 { font-size: clamp(58px, 15vw, 80px); margin-bottom: 28px; }
   .hero .hero-subtitle { font-size: clamp(25px, 5.5vw, 34px); margin-bottom: 32px; }
   .hero .resources { gap: 10px; }
-  .hero .resources button { flex-wrap: wrap; row-gap: 2px; min-height: 64px; padding: 10px 12px; font-size: 15px; }
+  .hero .resources :is(button, a) { flex-wrap: wrap; row-gap: 2px; min-height: 64px; padding: 10px 12px; font-size: 15px; }
   .hero .resources .resource-status { flex-basis: 100%; font-size: 11px; }
   .hero-media { aspect-ratio: 4 / 3; }
   .section { padding: 44px 0; }
