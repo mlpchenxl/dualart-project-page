@@ -114,6 +114,21 @@ video { width: 100%; background: #eef1ed; }
 footer { max-width: 1880px; width: calc(100% - 64px); margin: auto; padding: 28px 0 28px 252px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 footer p { font-size: 12px; color: var(--muted); }
 img, video { display: block; max-width: 100%; height: auto; border-radius: 12px; }
+.table-scroll { overflow-x: auto; border-block: 2px solid var(--ink); }
+.table-scroll:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.main-results-table { width: 100%; min-width: 1060px; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.main-results-table th, .main-results-table td { padding: 13px 9px; text-align: center; white-space: nowrap; }
+.main-results-table th[scope="row"], .main-results-table th[rowspan] { text-align: left; }
+.main-results-table thead th { font-weight: 500; }
+.main-results-table .geometry-header { color: #24384e; background: #eaf1f8; font-weight: 600; }
+.main-results-table .appearance-header { color: #284530; background: #edf4ee; font-weight: 600; }
+.main-results-table thead tr:nth-child(2) th, .main-results-table thead tr:last-child th { border-bottom: 1px solid var(--line); }
+.main-results-table thead tr:last-child th { color: var(--muted); padding-block: 9px; font-size: 13px; }
+.main-results-table .metric-direction { margin-left: 4px; }
+.main-results-table tbody tr:nth-child(4) { border-top: 1px solid var(--line); }
+.main-results-table .ours { border-top: 2px solid var(--ink); background: #edf4ee; }
+.table-note { margin-top: 16px; color: var(--muted); font-size: 14px; }
+.table-note p { margin: 0; }
 @media (max-width: 1100px) {
   .site-header { flex-wrap: wrap; gap: 4px; }
   .header-nav { width: 100%; gap: 22px; overflow-x: auto; scrollbar-width: thin; }

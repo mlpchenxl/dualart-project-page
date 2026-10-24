@@ -9,7 +9,7 @@
   <title>DualCraft: Dual-Workspace Generation of Articulated Assets from Images</title>
   <link rel="icon" href="static/favicon.ico?v=20261022" sizes="16x16 32x32 48x48">
   <link rel="icon" href="static/favicon.svg?v=20261022" type="image/svg+xml" sizes="any">
-  <link rel="stylesheet" href="static/style.css?v=d973603ca00f">
+  <link rel="stylesheet" href="static/style.css?v=0aa45f0e50f4">
   <link rel="stylesheet" href="static/gallery.css">
   <link rel="stylesheet" href="static/benchmark/explorer.css">
   <link rel="stylesheet" href="static/wild/explorer.css?v=full-width-20260925">
@@ -88,6 +88,7 @@
             <ul id="toc-experiment" class="toc-sublist" hidden>
               <li><a href="#dataset-results">Dataset results</a></li>
               <li><a href="#in-the-wild">In-the-Wild results</a></li>
+              <li><a href="#quantitative-results">Quantitative results</a></li>
             </ul>
           </li>
           <li>
@@ -318,6 +319,185 @@
           </div>
           <noscript><p>Enable JavaScript to explore the reconstructed objects.</p></noscript>
         </div>
+      </div>
+      <div id="quantitative-results" class="experiment-results" aria-labelledby="quantitative-results-title">
+        <h3 id="quantitative-results-title">Quantitative Results</h3>
+        <div class="table-scroll" role="region" tabindex="0" aria-label="Quantitative comparison table; scroll horizontally on small screens">
+          <table class="main-results-table" aria-describedby="results-note">
+          <caption class="sr-only">Main comparison of seven methods across geometry and appearance metrics in rest (RS) and articulated (AS) states.</caption>
+          <thead>
+          <tr>
+          <th scope="col" rowspan="3">Method</th>
+          <th scope="colgroup" colspan="6" class="geometry-header">Geometry</th>
+          <th scope="colgroup" colspan="6" class="appearance-header">Appearance</th>
+          </tr>
+          <tr>
+          <th scope="colgroup" colspan="2">
+          <i>d</i><sub>GIoU</sub><span class="metric-direction">↓</span>
+          </th>
+          <th scope="colgroup" colspan="2">cDist<span class="metric-direction">↓</span>
+          </th>
+          <th scope="colgroup" colspan="2">CD<span class="metric-direction">↓</span>
+          </th>
+          <th scope="colgroup" colspan="2">LPIPS<span class="metric-direction">↓</span>
+          </th>
+          <th scope="colgroup" colspan="2">PSNR<span class="metric-direction">↑</span>
+          </th>
+          <th scope="colgroup" colspan="2">FG IoU<span class="metric-direction">↑</span>
+          </th>
+          </tr>
+          <tr>
+          <th scope="col">RS</th>
+          <th scope="col">AS</th>
+          <th scope="col">RS</th>
+          <th scope="col">AS</th>
+          <th scope="col">RS</th>
+          <th scope="col">AS</th>
+          <th scope="col">RS</th>
+          <th scope="col">AS</th>
+          <th scope="col">RS</th>
+          <th scope="col">AS</th>
+          <th scope="col">RS</th>
+          <th scope="col">AS</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <th scope="row">SINGAPO<sup>*</sup>
+          </th>
+          <td>1.2256</td>
+          <td>1.2308</td>
+          <td>0.2182</td>
+          <td>0.2550</td>
+          <td>0.0748</td>
+          <td>0.0990</td>
+          <td>0.3325</td>
+          <td>0.3280</td>
+          <td>16.96</td>
+          <td>17.28</td>
+          <td>0.6853</td>
+          <td>0.6367</td>
+          </tr>
+          <tr>
+          <th scope="row">PhysX-Anything<sup>*</sup>
+          </th>
+          <td>1.1271</td>
+          <td>1.1350</td>
+          <td>0.3043</td>
+          <td>0.3550</td>
+          <td>0.0970</td>
+          <td>0.1538</td>
+          <td>0.2524</td>
+          <td>0.2622</td>
+          <td>18.52</td>
+          <td>18.38</td>
+          <td>0.7202</td>
+          <td>0.6528</td>
+          </tr>
+          <tr>
+          <th scope="row">PhysX-Omni<sup>*</sup>
+          </th>
+          <td>1.1120</td>
+          <td>1.1198</td>
+          <td>0.2869</td>
+          <td>0.3283</td>
+          <td>0.1014</td>
+          <td>0.1286</td>
+          <td>0.2535</td>
+          <td>0.2617</td>
+          <td>18.21</td>
+          <td>18.19</td>
+          <td>0.7126</td>
+          <td>0.6516</td>
+          </tr>
+          <tr>
+          <th scope="row">Articulate-Anything</th>
+          <td>1.2307</td>
+          <td>1.2402</td>
+          <td>0.2068</td>
+          <td>0.3387</td>
+          <td>0.0935</td>
+          <td>0.2480</td>
+          <td>0.2861</td>
+          <td>0.2862</td>
+          <td>17.89</td>
+          <td>18.15</td>
+          <td>0.6973</td>
+          <td>0.6286</td>
+          </tr>
+          <tr>
+          <th scope="row">Articraft</th>
+          <td>0.9995</td>
+          <td>1.0078</td>
+          <td>0.0929</td>
+          <td>0.1142</td>
+          <td>0.0327</td>
+          <td>0.0462</td>
+          <td>0.2063</td>
+          <td>0.2133</td>
+          <td>21.69</td>
+          <td>21.11</td>
+          <td>0.7950</td>
+          <td>0.7506</td>
+          </tr>
+          <tr>
+          <th scope="row">Codex-Native</th>
+          <td>0.8253</td>
+          <td>0.8379</td>
+          <td>0.0648</td>
+          <td>0.1080</td>
+          <td>0.0258</td>
+          <td>0.0582</td>
+          <td>0.1814</td>
+          <td>0.1924</td>
+          <td>22.08</td>
+          <td>21.44</td>
+          <td>0.8301</td>
+          <td>0.7750</td>
+          </tr>
+          <tr class="ours">
+          <th scope="row">DualCraft</th>
+          <td>
+          <strong>0.7961</strong>
+          </td>
+          <td>
+          <strong>0.8077</strong>
+          </td>
+          <td>
+          <strong>0.0599</strong>
+          </td>
+          <td>
+          <strong>0.0875</strong>
+          </td>
+          <td>
+          <strong>0.0203</strong>
+          </td>
+          <td>
+          <strong>0.0313</strong>
+          </td>
+          <td>
+          <strong>0.1677</strong>
+          </td>
+          <td>
+          <strong>0.1840</strong>
+          </td>
+          <td>
+          <strong>22.54</strong>
+          </td>
+          <td>
+          <strong>21.47</strong>
+          </td>
+          <td>
+          <strong>0.8460</strong>
+          </td>
+          <td>
+          <strong>0.7917</strong>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="table-note" id="results-note"><p>Means over three runs per object. RS: rest state. AS: sampled articulation states. ↓ Lower is better; ↑ higher is better. Bold indicates the best result. * Methods trained for asset generation. PhysX-Anything and PhysX-Omni have 49 evaluated assets each; all other methods have 50.</p></div>
       </div>
     </section>
 
